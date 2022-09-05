@@ -4,7 +4,7 @@ int printTriangle(int size) {
   int startCount = 0;
   //count from 0 (inclusive) to size (exclusive), for each number i that you count
   for (int i = 0; i < size; i++) {
-    for (int j = 0; j < i; j++) {
+    for (int j = 0; j <= i; j++) {
       printf("*");
       startCount++;
     }
