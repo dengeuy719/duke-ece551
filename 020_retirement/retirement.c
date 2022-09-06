@@ -29,7 +29,7 @@ void retirement(int startAge,           //in months
   count(startAge + working.months, &initial, retired);
 }
 
-int main() {
+int main(void) {
   retire_info working = {489, 1000, 0.045};
   retire_info retired = {384, -4000, 0.01};
   retirement(327, 21345, working, retired);
