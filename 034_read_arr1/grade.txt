@@ -1,0 +1,12 @@
+Grading at 09/18/2022:19:41:28.879775
+For commit ID 126b047f626d7c8ab66e3d078956dfb586a8d2e0
+Grading at Sun Sep 18 03:41:28 PM EDT 2022
+Attempting to compile test.c
+gcc -Wall -Werror -std=gnu99 -o test test.c
+compiled
+Line_2_did_not_match
+Line_6_did_not_match
+Your file did not match the expected ouput
+Your output did not match what we expected.
+
+Overall Grade: F
