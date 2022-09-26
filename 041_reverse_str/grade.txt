@@ -1,0 +1,22 @@
+Grading at 09/26/2022:02:17:43.604261
+For commit ID bea52c59212aeda0bb11980f585c9e627ab97529
+Grading at Sun Sep 25 10:17:43 PM EDT 2022
+Attempting to compile  reverse.c
+Your file matched the expected output
+Your output matched what we expected
+Removing your main() and replacing it with our own to run more tests...
+#################################################
+testcase2:
+ - Your program segfaulted.
+your code failed the testcase
+#################################################
+testcase3:
+Your file matched the expected output
+#################################################
+testcase4:
+Your file matched the expected output
+#################################################
+testcase5:
+Your file matched the expected output
+
+Overall Grade: C
