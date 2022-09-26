@@ -1,9 +1,10 @@
-Grading at 09/26/2022:00:44:19.174848
-For commit ID c9c47c6756995ba324633ffdb1128245e918782f
-Grading at Sun Sep 25 08:44:19 PM EDT 2022
+Grading at 09/26/2022:00:49:20.170454
+For commit ID f73b481a05f656ed8d49896b2718040c25ceab2b
+Grading at Sun Sep 25 08:49:20 PM EDT 2022
 Attempting to compile test.c
-The code did not compile
+gcc -o test -Wall -Werror -std=gnu99 test.c
+compiled
 Your file matched the expected output
 Your output matched what we expected
 
-Overall Grade: F
+Overall Grade: A
