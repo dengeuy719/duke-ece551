@@ -1,9 +1,9 @@
-Grading at 09/27/2022:19:25:15.367241
-For commit ID 6ad93f7fbb1402f68c4a11538842364c5fa05a57
-Grading at Tue Sep 27 03:25:15 PM EDT 2022
+Grading at 09/27/2022:19:29:55.966495
+For commit ID c90942a3001f0d47beeea51979823ec4d9db4a69
+Grading at Tue Sep 27 03:29:55 PM EDT 2022
 Attempting to compile numToBits.c
-Your file did not match the expected ouput
-Your output did not match what we expected.
+Your file matched the expected output
+Your output matched what we expected
 Removing your main() and replacing it with our own to run more tests...
 #################################################
 testcase2:
@@ -18,4 +18,4 @@ array size:100 was Correct
 testcase5:
 array size:5000 was Correct
 
-Overall Grade: C
+Overall Grade: A
