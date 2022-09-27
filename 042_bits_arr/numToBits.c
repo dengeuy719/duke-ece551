@@ -11,7 +11,7 @@ int getNthBit(uint32_t number, int bit) {
 }
 
 void numToBits(uint32_t * nums, int nNums, int * bits, int nBits) {
-  if (nBits < nNums * 32 - 1) {
+  if (nBits <= nNums * 32 - 1) {
     printf("Invalid call to numToBits! nBits is %d, nNums is %d\n", nBits, nNums);
   }
   for (int j = 0; j < nNums; j++) {
