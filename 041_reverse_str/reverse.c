@@ -6,7 +6,7 @@ void reverse(char * str) {
   //WRITE ME!
   int i, len = 0;
   char * s = str;
-  while (*s != 0) {
+  while (*s != '\0') {
     len++;
     s++;
   }
