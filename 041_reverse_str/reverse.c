@@ -4,8 +4,12 @@
 
 void reverse(char * str) {
   //WRITE ME!
-  int i, len;
-  len = strlen(str);
+  int i, len = 0;
+  char * s = str;
+  while (*s != 0) {
+    len++;
+    s++;
+  }
   char temp;
 
   for (i = 0; i < len / 2; i++) {
