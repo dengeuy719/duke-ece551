@@ -5,7 +5,7 @@
 void reverse(char * str) {
   //WRITE ME!
   int i, len, temp;
-  len = strlen(str);
+  len = strlen(str) - 1;
 
   for (i = 0; i < len / 2; i++) {
     temp = str[i];
