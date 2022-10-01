@@ -49,8 +49,8 @@ country_t parseLine(char * line) {
   // second, parse population nums
   line += i + 1;
   char * p;
-  uint64_t chartonum = strtoul(line, &p, 10);
-  ans.population = chartonum;
+  uint64_t charToNum = strtoul(line, &p, 10);
+  ans.population = charToNum;
   return ans;
 }
 void calcRunningAvg(unsigned * data, size_t n_days, double * avg) {
@@ -67,13 +67,12 @@ void calcRunningAvg(unsigned * data, size_t n_days, double * avg) {
   }
 
   //start calc
-  const size_t week = 7;
-  for (size_t i = 0; i < (n_days - (week - 1)); i++) {
+  for (size_t i = 0; i < (n_days - (7 - 1)); i++) {
     unsigned sum = 0;
-    for (size_t j = 0; j < week; j++) {
+    for (size_t j = 0; j < 7; j++) {
       sum += *(data + i + j);
     }
-    *(avg + i) = sum / (double)week;
+    *(avg + i) = sum / (double)7;
   }
 }
 
@@ -97,11 +96,9 @@ void calcCumulative(unsigned * data, size_t n_days, uint64_t pop, double * cum) 
   double sum = 0;
   //start calc
   for (size_t i = 0; i < n_days; i++) {
-    sum += *(data + i);
-    *(cum + i) = sum * 1e5 / pop;
+    sum = sum + *(data + i);
+    *(cum + i) = sum * 100000 / pop;
   }
-
-  return;
 }
 
 void printCountryWithMax(country_t * countries,
