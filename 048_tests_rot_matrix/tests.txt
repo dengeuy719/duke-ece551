@@ -1,0 +1,14 @@
+inp1.txt
+inp2.txt
+inp3.txt
+inp4.txt
+inp5.txt
+inp6.txt
+inp7.txt
+inp8.txt
+inp10.txt
+inp12.txt
+inp14.txt
+inp1
+inp1.txt inp2.txt
+
