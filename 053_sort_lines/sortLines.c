@@ -27,7 +27,7 @@ void std_input(FILE * f) {
   }
   free(curr);
   sortData(lines, i);
-  for (size_t j = 0; j < 1; j++) {
+  for (size_t j = 0; j < i; j++) {
     printf("%s", lines[j]);
     free(lines[j]);
   }
