@@ -27,7 +27,7 @@ void rotate(FILE * f) {
       }
     }
   }
-  if (row != 9 || col != 0) {
+  if (row != 10 || col != 0) {
     fprintf(stderr, "maxtrix is illegal");
     exit(EXIT_FAILURE);
   }
