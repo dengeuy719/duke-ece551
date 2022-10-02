@@ -1,0 +1,18 @@
+Grading at 10/02/2022:21:46:17.386966
+For commit ID f02cdbd312055fc21ecd80d205be4d76137c3dc7
+Grading at Sun Oct  2 05:46:13 PM EDT 2022
+Attempting to compile sortLines.c
+#################################################
+testcase1:
+testcase1 failed, your program didn't indicate this is a failure case
+#################################################
+testcase2:
+Your output is incorrect
+#################################################
+testcase3:
+Your output is incorrect
+#################################################
+testcase4:
+Your output is incorrect
+
+Overall Grade: F
