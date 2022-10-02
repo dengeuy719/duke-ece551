@@ -17,14 +17,8 @@ void rotate(FILE * f) {
     }
 
     else {
-      if (c < 0 || c > 255) {
-        fprintf(stderr, "character is illegal");
-        exit(EXIT_FAILURE);
-      }
-      else {
-        m[row][col] = c;
-        col++;
-      }
+      m[row][col] = c;
+      col++;
     }
   }
   if (row != 10 || col != 0) {
