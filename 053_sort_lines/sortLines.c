@@ -42,8 +42,10 @@ int main(int argc, char ** argv) {
   if (argc > 1) {
     for (int i = 1; i < argc; i++) {
       FILE * f = fopen(argv[i], " r");
-      if (f == NULL)
+      if (f == NULL) {
+        fprintf(stderr, "cannot open file %s", argv[i]);
         return EXIT_FAILURE;
+      }
       std_input(f);
       if (fclose(f) != 0) {
         fprintf(stderr, "cannot close file %s", argv[i]);
