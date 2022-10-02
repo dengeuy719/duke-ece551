@@ -34,16 +34,12 @@ country_t parseLine(char * line) {
       printf("Illegal character on name!");
       exit(EXIT_FAILURE);
     }
-    if (i == 63) {
-      printf("Name too long!");
-      exit(EXIT_FAILURE);
-    }
     ans.name[i] = *(line + i);
     i++;
   }
   ans.name[i] = '\0';
-  if (i == 0) {
-    printf("Can not find a character for country name!");
+  if (i == 0 || i > 63) {
+    printf("number of characters for country name is illegal!");
     exit(EXIT_FAILURE);
   }
   // second, parse population nums
