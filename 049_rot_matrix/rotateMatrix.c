@@ -15,13 +15,12 @@ void rotate(FILE * f) {
         row++;
       }
     }
-
     else {
       m[row][col] = c;
       col++;
     }
   }
-  if (row != 10 || col != 0) {
+  if (row != 10) {
     fprintf(stderr, "maxtrix is illegal");
     exit(EXIT_FAILURE);
   }
