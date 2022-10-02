@@ -1,10 +1,12 @@
-Grading at 10/02/2022:21:46:17.386966
-For commit ID f02cdbd312055fc21ecd80d205be4d76137c3dc7
-Grading at Sun Oct  2 05:46:13 PM EDT 2022
+Grading at 10/02/2022:21:48:02.938123
+For commit ID 2087ca2b56b3ff509f01cd4ceb0d5c57cdae5fa0
+Grading at Sun Oct  2 05:47:58 PM EDT 2022
 Attempting to compile sortLines.c
 #################################################
 testcase1:
-testcase1 failed, your program didn't indicate this is a failure case
+testcase1 passed, your program successfully indicated a failure
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
 #################################################
 testcase2:
 Your output is incorrect
