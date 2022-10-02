@@ -36,17 +36,18 @@ void rotate(FILE * f) {
 
 int main(int argc, char ** argv) {
   if (argc != 2) {
-    fprintf(stderr, "input file is illegal");
+    fprintf(stderr, "Usage: rotateMatrix inputname\n");
+    return EXIT_FAILURE;
   }
   FILE * f = fopen(argv[1], "r");
   if (f == NULL) {
-    fprintf(stderr, "empty file");
-    exit(EXIT_FAILURE);
+    fprintf(stderr, "Could not read the roateMatrix information\n");
+    return EXIT_FAILURE;
   }
   rotate(f);
   if (fclose(f) != 0) {
     fprintf(stderr, "fail to close file");
-    exit(EXIT_FAILURE);
+    return (EXIT_FAILURE);
   }
   return EXIT_SUCCESS;
 }
