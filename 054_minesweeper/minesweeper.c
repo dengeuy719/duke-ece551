@@ -41,11 +41,6 @@ void addRandomMine(board_t * b) {
 
 board_t * makeBoard(int w, int h, int numMines) {
   //WRITE ME!
-  //check input
-  if (w == 0 || h == 0) {
-    printf("Invaild width or height");
-    exit(EXIT_FAILURE);
-  }
   board_t * b = malloc(sizeof(*b));
   b->board = malloc(h * sizeof(*b->board));
   b->width = w;
@@ -121,13 +116,13 @@ int countMines(board_t * b, int x, int y) {
   int count = 0;
   for (int i = x - 1; i <= x + 1; i++) {
     for (int j = y - 1; j <= y + 1; j++) {
-      if (i < 0 || i > b->height || j < 0 || j > b->width) {
+      if (i < 0 || i > b->width || j < 0 || j > b->height) {
         continue;
       }
       else if (i == x && j == y) {
         continue;
       }
-      else if (IS_MINE(b->board[i][j])) {
+      else if (IS_MINE(b->board[j][i])) {
         count++;
       }
     }
