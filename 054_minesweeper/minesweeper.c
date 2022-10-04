@@ -55,9 +55,9 @@ board_t * makeBoard(int w, int h, int numMines) {
   for (int i = 0; i < h; i++)
     b->board[i] = malloc(w * sizeof(*b->board[i]));
 
-  for (int i = 0; i < h; i++) {
-    for (int j = 0; j < w; j++) {
-      b->board[i][j] = UNKNOWN;
+  for (int i = 0; i < w; i++) {
+    for (int j = 0; j < h; j++) {
+      b->board[j][i] = UNKNOWN;
     }
   }
   for (int i = 0; i < numMines; i++)
@@ -121,7 +121,7 @@ int countMines(board_t * b, int x, int y) {
     for (int j = y - 1; j <= y + 1; j++) {
       if (i < 0 || i > b->height || j < 0 || j > b->width)
         continue;
-      else if (IS_MINE(b->board[j][i]))
+      else if (IS_MINE(b->board[i][j]))
         count++;
     }
   }
