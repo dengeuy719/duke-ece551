@@ -12,16 +12,19 @@ country_t parseLine(char * line) {
   ans.name[0] = '\0';
   ans.population = 0;
   //check line is vaild
+  // line should not be NULL
   if (line == NULL) {
     printf("Input line is NULL!");
     exit(EXIT_FAILURE);
   }
+  // *line should not be '\0', '\0' is null-terminator which indicates input line is empty.
   if (*line == '\0') {
     printf("Input line is empty!");
     exit(EXIT_FAILURE);
   }
-  // find coma
+  // use strchr() to find coma, it will stop when finding a coma
   char * coma_p = strchr(line, ',');
+  // coma_p == NULL means it points to the end of the line, but still can not find a comma
   if (coma_p == NULL) {
     printf("Can not find a comma!");
     exit(EXIT_FAILURE);
@@ -30,6 +33,7 @@ country_t parseLine(char * line) {
   // first, parse name string
   size_t i = 0;
   while (*(line + i) != ',') {
+    // check each char is vaild for names, we only allowed char of nanme to be letters or space.
     if (!IS_SPACE(*(line + i)) && !IS_ALPHA(*(line + i))) {
       printf("Illegal character on name!");
       exit(EXIT_FAILURE);
@@ -38,6 +42,7 @@ country_t parseLine(char * line) {
     i++;
   }
   ans.name[i] = '\0';
+  //check lenth of name, it should not be grater than 63 and it should not be empty
   if (i == 0 || i > 63) {
     printf("number of characters for country name is illegal!");
     exit(EXIT_FAILURE);
@@ -116,6 +121,7 @@ void printCountryWithMax(country_t * countries,
     printf("Data array is null!");
     exit(EXIT_FAILURE);
   }
+  //check days
   if (n_days == 0) {
     printf("Num of days should not be 0!");
     exit(EXIT_FAILURE);
