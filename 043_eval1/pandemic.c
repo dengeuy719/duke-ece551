@@ -107,9 +107,17 @@ void printCountryWithMax(country_t * countries,
     printf("Input of countries is NULl!");
     exit(EXIT_FAILURE);
   }
+  if (n_countries == 0) {
+    printf("Num of countries should not be 0!");
+    exit(EXIT_FAILURE);
+  }
   //check data
   if (data == NULL) {
     printf("Data array is null!");
+    exit(EXIT_FAILURE);
+  }
+  if (n_days == 0) {
+    printf("Num of days should not be 0!");
     exit(EXIT_FAILURE);
   }
   char * country_name = NULL;
