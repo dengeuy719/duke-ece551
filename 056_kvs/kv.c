@@ -24,7 +24,7 @@ kvarray_t * readKVs(const char * fname) {
   while (getline(&curr, &linesz, f) >= 0) {
     kvarray->size++;
     kvarray->kv_pairs =
-        realloc(kvarray->kv_pairs, kvarray->size * sizeof(*kvarray->kv_pairs));
+        realloc(kvarray->kv_pairs, kvarray->size * sizeof(kvarray->kv_pairs));
 
     linep = curr;
     size_t len_k, len_t;
@@ -44,11 +44,11 @@ kvarray_t * readKVs(const char * fname) {
     i++;
     curr = NULL;
   }
-  free(curr);
   if (fclose(f) != 0) {
     fprintf(stderr, "Could not close file");
     exit(EXIT_FAILURE);
   }
+  free(curr);
   return kvarray;
 }
 
