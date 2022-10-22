@@ -119,7 +119,7 @@ Circle ** readCircles(int ncircles) {
       return NULL;
     }
     Point center;  //would be nicer to have a Point(x,y) constructor
-    //but we don't learn overloading until the next lecture
+                   //but we don't learn overloading until the next lecture
     center.move(x, y);
     ans[i] = new Circle(center, r);
   }
