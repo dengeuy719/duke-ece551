@@ -6,7 +6,7 @@ double Circle::intersectionArea(const Circle & otherCircle) {
   double distance = center.distanceFrom(otherCircle.center);
   double r1 = radius, r2 = otherCircle.radius;
   double s, l;
-  if (r1 > r2) {
+  if (r1 >= r2) {
     l = r1;
     s = r2;
   }
@@ -14,7 +14,7 @@ double Circle::intersectionArea(const Circle & otherCircle) {
     l = r2;
     s = r1;
   }
-  if (distance >= r1 + r2) {
+  if (distance >= l + s) {
     return 0.0;
   }
   else if (distance < l - s) {
