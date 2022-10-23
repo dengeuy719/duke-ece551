@@ -1,20 +1,57 @@
-Grading at 10/23/2022:02:01:46.859370
-For commit ID 45aa5c04a7e091341606a94ad8ad816fc5cda1fd
-Grading at Sat Oct 22 10:01:46 PM EDT 2022
+Grading at 10/23/2022:02:06:52.230142
+For commit ID 687e9bc68eece9d67dd07ade3b367eb6ad6362f6
+Grading at Sat Oct 22 10:06:36 PM EDT 2022
 Attempting to compile:
 rm -f *.o  *~ intMatrixTest
-The code did not compile!
-In file included from 69_test_main.cpp:1:
-IntMatrix.h:4:10: fatal error: IntArray.h: No such file or directory
-    4 | #include "IntArray.h"
-      |          ^~~~~~~~~~~~
-compilation terminated.
-In file included from IntMatrix.cpp:1:
-IntMatrix.h:4:10: fatal error: IntArray.h: No such file or directory
-    4 | #include "IntArray.h"
-      |          ^~~~~~~~~~~~
-compilation terminated.
-cc1plus: fatal error: IntArray.cpp: No such file or directory
-compilation terminated.
+#################################################
+testcase1:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase2:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase3:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase4:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase5:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase6:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase7:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase8:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase9:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
+#################################################
+testcase10:
+Your output is correct
+  - Valgrind was clean (no errors, no memory leaks)
+valgrind was clean
 
-Overall Grade: F
+Overall Grade: A
