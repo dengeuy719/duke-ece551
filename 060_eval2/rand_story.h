@@ -1,3 +1,4 @@
+
 #ifndef __RAND_STORY_H__
 #define __RAND_STORY_H__
 
@@ -9,7 +10,7 @@
 
 //any functions you want your main to use
 void error(char * msg);
-
+FILE * open_file(char * n);
 struct parsedArr_tag {
   char ** seg;
   size_t n;
@@ -22,6 +23,8 @@ struct parsedArrs_tag {
 };
 typedef struct parsedArrs_tag parsedArrs_t;
 
+typedef enum opt_tag { NUM, CAT } opt_t;
+
 parsedArrs_t * parseTemp(FILE * f);
 void replace_word(parsedArrs_t * res);
 void free_parsedArr(parsedArr_t * arr);
@@ -31,4 +34,10 @@ void file_close(FILE * f);
 catarray_t * parseWord(FILE * f);
 void free_parsedWord(category_t * cate);
 void free_parsedWords(catarray_t * res);
+
+//step3
+void replace_word_2(parsedArrs_t * res, catarray_t * parsedWords, category_t * memo);
+category_t * create_memo();
+const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo);
+void free_memo(category_t * memo);
 #endif

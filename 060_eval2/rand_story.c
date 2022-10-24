@@ -5,6 +5,13 @@ void error(char * msg) {
   exit(EXIT_FAILURE);
 }
 
+FILE * open_file(char * n) {
+  FILE * f = fopen(n, "r");
+  if (f == NULL) {
+    error("cannot open file");
+  }
+  return f;
+}
 // parse the input template and return the result.
 parsedArrs_t * parseTemp(FILE * f) {
   char * line = NULL;
@@ -61,6 +68,68 @@ void replace_word(parsedArrs_t * res) {
     fprintf(stdout, "\n");
   }
 }
+
+const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo) {
+  const char * ans = NULL;
+  char * left = strchr(seg, '_');
+  char * right = strchr(left + 1, '_');
+  seg = left + 1;
+  *right = '\0';
+  // if seg is a category name
+  if (atoi(seg) == 0) {
+    for (size_t i = 0; i < cArr->n; i++) {
+      if (strcmp(seg, cArr->arr[i].name) == 0) {
+        ans = chooseWord(seg, cArr);
+        memo->n_words++;
+        memo->words = realloc(memo->words, memo->n_words * sizeof(*memo->words));
+        memo->words[memo->n_words - 1] = strdup(ans);  //free
+      }
+    }
+  }
+  // if seg is a valid number
+  else if (atoi(seg) > 0) {
+    if (memo->n_words == 0) {
+      error("A previously used word do not exsits.");
+    }
+    if ((size_t)atoi(seg) > memo->n_words) {
+      error("don't have so many previously used word");
+    }
+
+    ans = memo->words[memo->n_words - (size_t)atoi(seg)];
+    memo->n_words++;
+    memo->words = realloc(memo->words, memo->n_words * sizeof(*memo->words));
+    memo->words[memo->n_words - 1] = strdup(ans);  //free
+  }
+  else {
+    error("the category name is neither a valid integer nor a valid category name");
+  }
+  return ans;
+}
+
+category_t * create_memo() {
+  category_t * memo = malloc(sizeof(*memo));  // free
+  memo->n_words = 0;
+  memo->name = "memo";
+  memo->words = NULL;
+  return memo;
+}
+
+void replace_word_2(parsedArrs_t * res, catarray_t * parsedWords, category_t * memo) {
+  for (size_t i = 0; i < res->n; i++) {
+    for (size_t j = 0; j < res->arrs[i]->n; j++) {
+      if (strchr(res->arrs[i]->seg[j], '_') != NULL) {
+        char * temp = strdup(res->arrs[i]->seg[j]);  //free
+        free(res->arrs[i]->seg[j]);
+        //res->arrs[i]->seg[j] = strdup(chooseWord("verb", NULL));  //free
+        res->arrs[i]->seg[j] = strdup(replace_opt(temp, parsedWords, memo));
+        free(temp);
+      }
+      fprintf(stdout, "%s", res->arrs[i]->seg[j]);
+    }
+    fprintf(stdout, "\n");
+  }
+}
+
 void free_parsedArr(parsedArr_t * arr) {
   for (size_t n = 0; n < arr->n; n++) {
     free(arr->seg[n]);
@@ -127,6 +196,18 @@ catarray_t * parseWord(FILE * f) {
   }
   free(line);
   return res;
+}
+
+void free_memo(category_t * memo) {
+  if (memo == NULL) {
+    return;
+  }
+  for (size_t i = 0; i < memo->n_words; i++) {
+    free(memo->words[i]);
+  }
+  //free(cate->name);
+  free(memo->words);
+  free(memo);
 }
 
 void free_parsedWord(category_t * cate) {
