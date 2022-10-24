@@ -27,4 +27,8 @@ void replace_word(parsedArrs_t * res);
 void free_parsedArr(parsedArr_t * arr);
 void free_parsedArrs(parsedArrs_t * res);
 void file_close(FILE * f);
+
+catarray_t * parseWord(FILE * f);
+void free_parsedWord(category_t * cate);
+void free_parsedWords(catarray_t * res);
 #endif

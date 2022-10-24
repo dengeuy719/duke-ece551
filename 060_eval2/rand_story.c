@@ -81,3 +81,71 @@ void file_close(FILE * f) {
     exit(EXIT_FAILURE);
   }
 }
+
+catarray_t * parseWord(FILE * f) {
+  char * line = NULL;
+  size_t sz;
+  catarray_t * res = malloc(sizeof(*res));  //free
+  res->n = 0;
+  res->arr = NULL;
+  while (getline(&line, &sz, f) >= 0) {
+    char * p = line;  //free
+    char * colon = strchr(p, ':');
+    if (colon == NULL) {
+      error("illegal cateoory formal");
+    }
+    char * newLine = strchr(p, '\n');
+    if (newLine == NULL || newLine - colon <= 1 || colon - p <= 1) {
+      error("illegal category formal");
+    }
+    size_t cat_len = colon - p;
+    size_t word_len = newLine - colon - 1;
+    char * cat = strndup(p, cat_len);            //free
+    char * word = strndup(colon + 1, word_len);  //free
+    int flag = 0;
+    for (size_t i = 0; i < res->n; i++) {
+      if (strcmp(res->arr[i].name, cat) == 0) {
+        flag = 1;
+        free(cat);
+        res->arr[i].n_words++;
+        //free
+        res->arr[i].words =
+            realloc(res->arr[i].words, res->arr[i].n_words * sizeof(*res->arr[i].words));
+        res->arr[i].words[res->arr[i].n_words - 1] = word;
+      }
+    }
+    if (flag == 0) {
+      res->n++;
+      res->arr = realloc(res->arr, res->n * sizeof(*res->arr));  //free
+      category_t new_name;
+      new_name.n_words = 1;
+      new_name.name = cat;
+      new_name.words = malloc(sizeof(*new_name.words));
+      new_name.words[0] = word;
+      res->arr[res->n - 1] = new_name;
+    }
+  }
+  free(line);
+  return res;
+}
+
+void free_parsedWord(category_t * cate) {
+  if (cate == NULL) {
+    return;
+  }
+  for (size_t i = 0; i < cate->n_words; i++) {
+    free(cate->words[i]);
+  }
+  free(cate->name);
+  free(cate->words);
+}
+void free_parsedWords(catarray_t * res) {
+  if (res == NULL) {
+    return;
+  }
+  for (size_t i = 0; i < res->n; i++) {
+    free_parsedWord(&res->arr[i]);
+  }
+  free(res->arr);
+  free(res);
+}
