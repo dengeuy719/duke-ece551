@@ -77,9 +77,9 @@ const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t
   char * right = strchr(left + 1, '_');
   seg = left + 1;
   *right = '\0';
-  if (strcmp("", seg) == 0) {
+  /*if (strcmp("", seg) == 0) {
     error("invalid category formal: __ ");
-  }
+    }*/
   // if seg is a category name
   if (atoi(seg) == 0) {
     int match = 0;
@@ -214,8 +214,8 @@ catarray_t * parseWord(FILE * f) {
       error("illegal cateoory formal: lack of colon \n");
     }
     char * newLine = strchr(p, '\n');
-    if (newLine == NULL || newLine - colon < 1 || colon - p < 1) {
-      error("illegal category formal: lack of name(:example) or words(example:)\n");
+    if (newLine == NULL) {
+      error("illegal category formal: cannot find '\n' \n");
     }
     size_t cat_len = colon - p;
     size_t word_len = newLine - colon - 1;
@@ -283,14 +283,13 @@ void free_parsedWords(catarray_t * res) {
 }
 
 void execute_opt(char * a1, char * a2, opt_t opt) {
-  // reuse_on
   // parse category
   FILE * f_cat = open_file(a1);
   catarray_t * parsedWords = parseWord(f_cat);
   //parse template
   FILE * f_temp = open_file(a2);
   parsedArrs_t * res = parseTemp(f_temp);
-
+  //create memo for REUSE function
   category_t * memo = create_memo();
   replace_word_2(res, parsedWords, memo, opt);
 
