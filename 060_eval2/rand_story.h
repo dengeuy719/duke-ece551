@@ -23,8 +23,7 @@ struct parsedArrs_tag {
 };
 typedef struct parsedArrs_tag parsedArrs_t;
 
-typedef enum opt_tag { NUM, CAT } opt_t;
-
+typedef enum opt_tag { REUSE_ON, REUSE_OFF } opt_t;
 parsedArrs_t * parseTemp(FILE * f);
 void replace_word(parsedArrs_t * res);
 void free_parsedArr(parsedArr_t * arr);
@@ -36,8 +35,12 @@ void free_parsedWord(category_t * cate);
 void free_parsedWords(catarray_t * res);
 
 //step3
-void replace_word_2(parsedArrs_t * res, catarray_t * parsedWords, category_t * memo);
+void replace_word_2(parsedArrs_t * res,
+                    catarray_t * parsedWords,
+                    category_t * memo,
+                    opt_t opt);
 category_t * create_memo();
-const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo);
+const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t opt);
 void free_memo(category_t * memo);
+void execute_opt(char * a1, char * a2, opt_t opt);
 #endif

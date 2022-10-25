@@ -68,8 +68,8 @@ void replace_word(parsedArrs_t * res) {
     fprintf(stdout, "\n");
   }
 }
-
-const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo) {
+//updating
+const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t opt) {
   const char * ans = NULL;
   char * left = strchr(seg, '_');
   char * right = strchr(left + 1, '_');
@@ -79,7 +79,40 @@ const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo) {
   if (atoi(seg) == 0) {
     for (size_t i = 0; i < cArr->n; i++) {
       if (strcmp(seg, cArr->arr[i].name) == 0) {
-        ans = chooseWord(seg, cArr);
+        if (opt == REUSE_ON) {
+          ans = chooseWord(seg, cArr);
+        }
+        else if (opt == REUSE_OFF) {
+          category_t temp;
+          temp.n_words = 0;
+          temp.name = strdup(cArr->arr[i].name);
+          temp.words = NULL;
+
+          for (size_t l = 0; l < cArr->arr[i].n_words; l++) {
+            int flag = 1;
+            for (size_t k = 0; k < memo->n_words; k++) {
+              if (strcmp(memo->words[k], cArr->arr[i].words[l]) == 0) {
+                flag = 0;
+              }
+            }
+            if (flag == 1) {
+              temp.n_words++;
+              temp.words =
+                  realloc(temp.words, temp.n_words * sizeof(*temp.words));  //free
+              temp.words[temp.n_words - 1] = strdup(cArr->arr[i].words[l]);
+              //free(cArr->arr[i].words[l]);
+            }
+            free(cArr->arr[i].words[l]);
+          }
+          free(cArr->arr[i].words);
+          free(cArr->arr[i].name);
+          cArr->arr[i] = temp;
+          ans = chooseWord(seg, cArr);
+        }
+        else {
+          error("illegal optiona");
+        }
+
         memo->n_words++;
         memo->words = realloc(memo->words, memo->n_words * sizeof(*memo->words));
         memo->words[memo->n_words - 1] = strdup(ans);  //free
@@ -114,14 +147,19 @@ category_t * create_memo() {
   return memo;
 }
 
-void replace_word_2(parsedArrs_t * res, catarray_t * parsedWords, category_t * memo) {
+//updating
+
+void replace_word_2(parsedArrs_t * res,
+                    catarray_t * parsedWords,
+                    category_t * memo,
+                    opt_t opt) {
   for (size_t i = 0; i < res->n; i++) {
     for (size_t j = 0; j < res->arrs[i]->n; j++) {
       if (strchr(res->arrs[i]->seg[j], '_') != NULL) {
         char * temp = strdup(res->arrs[i]->seg[j]);  //free
         free(res->arrs[i]->seg[j]);
         //res->arrs[i]->seg[j] = strdup(chooseWord("verb", NULL));  //free
-        res->arrs[i]->seg[j] = strdup(replace_opt(temp, parsedWords, memo));
+        res->arrs[i]->seg[j] = strdup(replace_opt(temp, parsedWords, memo, opt));
         free(temp);
       }
       fprintf(stdout, "%s", res->arrs[i]->seg[j]);
@@ -194,6 +232,7 @@ catarray_t * parseWord(FILE * f) {
       res->arr[res->n - 1] = new_name;
     }
   }
+
   free(line);
   return res;
 }
@@ -229,4 +268,23 @@ void free_parsedWords(catarray_t * res) {
   }
   free(res->arr);
   free(res);
+}
+
+void execute_opt(char * a1, char * a2, opt_t opt) {
+  // reuse_on
+  // parse category
+  FILE * f_cat = open_file(a1);
+  catarray_t * parsedWords = parseWord(f_cat);
+  //parse template
+  FILE * f_temp = open_file(a2);
+  parsedArrs_t * res = parseTemp(f_temp);
+
+  category_t * memo = create_memo();
+  replace_word_2(res, parsedWords, memo, opt);
+
+  free_parsedArrs(res);
+  free_parsedWords(parsedWords);
+  free_memo(memo);
+  file_close(f_cat);
+  file_close(f_temp);
 }
