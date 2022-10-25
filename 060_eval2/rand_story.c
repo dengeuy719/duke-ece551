@@ -14,13 +14,15 @@ FILE * open_file(char * n) {
   }
   return f;
 }
-// parse the input template and return the result.
+// parse the input template line by line( split each line into segments which are divided by '_'),
+// and return the result.
 parsedArrs_t * parseTemp(FILE * f) {
   char * line = NULL;
   size_t sz;
   parsedArrs_t * res = malloc(sizeof(*res));  //free
   res->n = 0;
   res->arrs = NULL;
+  //parse each line
   while (getline(&line, &sz, f) >= 0) {
     char * p = line;  //free
     parsedArr_t * arr = malloc(sizeof(*arr));
@@ -57,7 +59,7 @@ parsedArrs_t * parseTemp(FILE * f) {
   free(line);
   return res;
 }
-
+//replce blanks(can be found in parsedArrs) with required word
 void replace_word(parsedArrs_t * res) {
   for (size_t i = 0; i < res->n; i++) {
     for (size_t j = 0; j < res->arrs[i]->n; j++) {
@@ -70,7 +72,14 @@ void replace_word(parsedArrs_t * res) {
     fprintf(stdout, "\n");
   }
 }
-//updating
+//repalcing blanks has options:
+//if it is a category name：
+//   if option--REUSE_ON:
+//      we don't need to remember words that were used, only simply chooseWord()
+//   if option--REUSE_OFF:
+//      we need to use no repeat words, so we will need memo to update out catarray,then chooseword()
+//if it is a number:
+//   we need memo to choose used word backwareds corresponding to number
 const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t opt) {
   const char * ans = NULL;
   char * left = strchr(seg, '_');
@@ -82,6 +91,7 @@ const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t
     }*/
   // if seg is a category name
   if (atoi(seg) == 0) {
+    // flag for finding a match in category name, 0:not find  1:find
     int match = 0;
     for (size_t i = 0; i < cArr->n; i++) {
       if (strcmp(seg, cArr->arr[i].name) == 0) {
@@ -139,7 +149,7 @@ const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t
     if (atoi(seg) > INT_MAX) {
       error("number out of scope");
     }
-
+    //choose word for memo
     ans = memo->words[memo->n_words - (size_t)atoi(seg)];
     memo->n_words++;
     memo->words = realloc(memo->words, memo->n_words * sizeof(*memo->words));
@@ -159,8 +169,7 @@ category_t * create_memo() {
   return memo;
 }
 
-//updating
-
+//using repalce_opt() to pick word to replace blanks in res
 void replace_word_2(parsedArrs_t * res,
                     catarray_t * parsedWords,
                     category_t * memo,
@@ -170,7 +179,6 @@ void replace_word_2(parsedArrs_t * res,
       if (strchr(res->arrs[i]->seg[j], '_') != NULL) {
         char * temp = strdup(res->arrs[i]->seg[j]);  //free
         free(res->arrs[i]->seg[j]);
-        //res->arrs[i]->seg[j] = strdup(chooseWord("verb", NULL));  //free
         res->arrs[i]->seg[j] = strdup(replace_opt(temp, parsedWords, memo, opt));
         free(temp);
       }
@@ -200,7 +208,11 @@ void file_close(FILE * f) {
     exit(EXIT_FAILURE);
   }
 }
-
+//parse word line by line:
+//if the category name does not exsit:
+//   create a new position for it, and store word in this line
+//if the category name exsits:
+//   store this word to it
 catarray_t * parseWord(FILE * f) {
   char * line = NULL;
   size_t sz;
@@ -219,8 +231,12 @@ catarray_t * parseWord(FILE * f) {
     }
     size_t cat_len = colon - p;
     size_t word_len = newLine - colon - 1;
-    char * cat = strndup(p, cat_len);            //free
+    //category name
+    char * cat = strndup(p, cat_len);  //free
+    //word
     char * word = strndup(colon + 1, word_len);  //free
+    //flag for finding whether this category name exsits or not
+    //0: not find; 1: find
     int flag = 0;
     for (size_t i = 0; i < res->n; i++) {
       if (strcmp(res->arr[i].name, cat) == 0) {
@@ -244,7 +260,6 @@ catarray_t * parseWord(FILE * f) {
       res->arr[res->n - 1] = new_name;
     }
   }
-
   free(line);
   return res;
 }
@@ -282,17 +297,17 @@ void free_parsedWords(catarray_t * res) {
   free(res);
 }
 
+//abstraction for main
 void execute_opt(char * a1, char * a2, opt_t opt) {
-  // parse category
+  //parse category
   FILE * f_cat = open_file(a1);
   catarray_t * parsedWords = parseWord(f_cat);
   //parse template
   FILE * f_temp = open_file(a2);
   parsedArrs_t * res = parseTemp(f_temp);
-  //create memo for REUSE function
+  //create memo for REUSE_OPTION function
   category_t * memo = create_memo();
   replace_word_2(res, parsedWords, memo, opt);
-
   free_parsedArrs(res);
   free_parsedWords(parsedWords);
   free_memo(memo);
