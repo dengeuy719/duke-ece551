@@ -1,5 +1,7 @@
 #include "rand_story.h"
 
+#include <limits.h>
+
 void error(char * msg) {
   fprintf(stderr, "%s\n", msg);
   exit(EXIT_FAILURE);
@@ -26,7 +28,7 @@ parsedArrs_t * parseTemp(FILE * f) {
     arr->seg = NULL;
     while (*p != '\n') {
       char * left = strchr(p, '_');
-      //test: left = NULL
+      //blanks do not exist
       if (left == NULL) {
         arr->n++;
         arr->seg = realloc(arr->seg, arr->n * sizeof(*arr->seg));
@@ -38,9 +40,9 @@ parsedArrs_t * parseTemp(FILE * f) {
       arr->seg = realloc(arr->seg, arr->n * sizeof(*arr->seg));  //free
       arr->seg[arr->n - 1] = strndup(p, pre_len);                //free
       char * right = strchr(left + 1, '_');
-      //test: right = NULL
+      //only have a left '_'
       if (right == NULL) {
-        error("illegal template formal");
+        error("illegal template formal: _example");
       }
       size_t blank_len = right - left + 1;
       arr->n++;
@@ -75,10 +77,15 @@ const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t
   char * right = strchr(left + 1, '_');
   seg = left + 1;
   *right = '\0';
+  if (strcmp("", seg) == 0) {
+    error("invalid category formal: __ ");
+  }
   // if seg is a category name
   if (atoi(seg) == 0) {
+    int match = 0;
     for (size_t i = 0; i < cArr->n; i++) {
       if (strcmp(seg, cArr->arr[i].name) == 0) {
+        match = 1;
         if (opt == REUSE_ON) {
           ans = chooseWord(seg, cArr);
         }
@@ -110,22 +117,27 @@ const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t
           ans = chooseWord(seg, cArr);
         }
         else {
-          error("illegal optiona");
+          error("illegal option");
         }
-
         memo->n_words++;
         memo->words = realloc(memo->words, memo->n_words * sizeof(*memo->words));
         memo->words[memo->n_words - 1] = strdup(ans);  //free
       }
     }
+    if (match == 0) {
+      error("cannot match any category\n");
+    }
   }
   // if seg is a valid number
   else if (atoi(seg) > 0) {
     if (memo->n_words == 0) {
-      error("A previously used word do not exsits.");
+      error("A previously used word do not exsits \n");
     }
     if ((size_t)atoi(seg) > memo->n_words) {
-      error("don't have so many previously used word");
+      error("don't have so many previously used word\n");
+    }
+    if (atoi(seg) > INT_MAX) {
+      error("number out of scope");
     }
 
     ans = memo->words[memo->n_words - (size_t)atoi(seg)];
@@ -134,7 +146,7 @@ const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t
     memo->words[memo->n_words - 1] = strdup(ans);  //free
   }
   else {
-    error("the category name is neither a valid integer nor a valid category name");
+    error("the category name is neither a valid integer nor a valid category name \n");
   }
   return ans;
 }
@@ -199,11 +211,11 @@ catarray_t * parseWord(FILE * f) {
     char * p = line;  //free
     char * colon = strchr(p, ':');
     if (colon == NULL) {
-      error("illegal cateoory formal");
+      error("illegal cateoory formal: lack of colon \n");
     }
     char * newLine = strchr(p, '\n');
-    if (newLine == NULL || newLine - colon <= 1 || colon - p <= 1) {
-      error("illegal category formal");
+    if (newLine == NULL || newLine - colon < 1 || colon - p < 1) {
+      error("illegal category formal: lack of name(:example) or words(example:)\n");
     }
     size_t cat_len = colon - p;
     size_t word_len = newLine - colon - 1;
