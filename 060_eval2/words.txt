@@ -8,3 +8,6 @@ adjective:peaceful
 :edg
 -1:-1
 0:0, sdk
+0asd:dnf
+@#$:symbol
+     :blank
