@@ -90,7 +90,7 @@ const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t
     error("invalid category formal: __ ");
     }*/
   // if seg is a category name
-  if (strtol(seg, NULL, 10) == 0) {
+  if (strtol(seg, NULL, 10) <= 0) {
     // flag for finding a match in category name, 0:not find  1:find
     int match = 0;
     for (size_t i = 0; i < cArr->n; i++) {
