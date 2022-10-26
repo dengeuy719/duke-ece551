@@ -7,11 +7,12 @@
 void sortLines(std::istream & is) {
   std::string line;
   std::vector<std::string> res;
-  while (std::getline(is, line))
+  while (std::getline(is, line)) {
     res.push_back(line);
+  }
   std::sort(res.begin(), res.end());
   for (size_t i = 0; i < res.size(); i++) {
-    std::cout << res[i];
+    std::cout << res[i] << std::endl;
   }
 }
 
@@ -28,6 +29,7 @@ int main(int argc, char ** argv) {
       }
       else {
         std::cerr << "cannot open file";
+        exit(EXIT_FAILURE);
       }
     }
   }
