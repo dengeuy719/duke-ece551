@@ -90,7 +90,7 @@ const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t
     error("invalid category formal: __ ");
     }*/
   // if seg is a category name
-  if (atoi(seg) == 0) {
+  if (strtol(seg, NULL, 10) == 0) {
     // flag for finding a match in category name, 0:not find  1:find
     int match = 0;
     for (size_t i = 0; i < cArr->n; i++) {
@@ -139,18 +139,18 @@ const char * replace_opt(char * seg, catarray_t * cArr, category_t * memo, opt_t
     }
   }
   // if seg is a valid number
-  else if (atoi(seg) > 0) {
+  else if (strtol(seg, NULL, 10) > 0) {
     if (memo->n_words == 0) {
       error("A previously used word do not exsits \n");
     }
-    if ((size_t)atoi(seg) > memo->n_words) {
+    if ((size_t)strtol(seg, NULL, 10) > memo->n_words) {
       error("don't have so many previously used word\n");
     }
-    if (atoi(seg) > INT_MAX) {
+    if (strtol(seg, NULL, 10) > INT_MAX) {
       error("number out of scope");
     }
     //choose word for memo
-    ans = memo->words[memo->n_words - (size_t)atoi(seg)];
+    ans = memo->words[memo->n_words - (size_t)strtol(seg, NULL, 10)];
     memo->n_words++;
     memo->words = realloc(memo->words, memo->n_words * sizeof(*memo->words));
     memo->words[memo->n_words - 1] = strdup(ans);  //free
