@@ -87,26 +87,32 @@ class LinkedList {
     }
     size++;
   }
-  Node * removeHelper(const T & item, Node * cur) {
-    if (cur == NULL) {
-      return NULL;
-    }
-    if (item == cur->data) {
-      Node * ans = cur->next;
-      delete cur;
-      return ans;
-    }
-    cur->next = removeHelper(item, cur->next);
-    return cur;
-  }
+
   bool remove(const T & item) {
-    head = removeHelper(item, head);
-    if (head != NULL) {
-      return true;
+    Node * cur = head;
+    while (cur != NULL && cur->data != item) {
+      cur = cur->next;
     }
-    else {
+    if (cur == NULL) {
       return false;
     }
+    Node * p = cur->prev;
+    Node * n = cur->next;
+    if (n != NULL) {
+      n->prev = p;
+    }
+    else {
+      tail = p;
+    }
+    if (p != NULL) {
+      p->next = n;
+    }
+    else {
+      head = n;
+    }
+    delete cur;
+    size--;
+    return true;
   }
   T & operator[](int index) {
     if (index < 0 || index >= size) {
