@@ -1,86 +1,261 @@
-Grading at 10/26/2022:20:57:19.152421
+Grading at 11/05/2022:20:29:49.013792
 For commit ID 06a8594dd44abdedc0012bea8d248aec06221302
-Grading at Wed Oct 26 04:57:15 PM EDT 2022
-Doing some basic checking for your submission
+Grading at Sat Nov  5 04:29:20 PM EDT 2022
 
+=========================================================================
 Step 1
+
 Checking that story-step1 compiles
 rm -f *~ story-step4  story-step1 story-step2 story-step3 story-step4.o story-step1.o story-step2.o story-step3.o rand_story.o
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step1.c
 gcc -o story-step1 story-step1.o rand_story.o provided.o
 rm story-step1.o
-The code compiled (good)
-Executable story-step1 exists (good)
-Checking with provided test case story.txt
++-----------------------------------------------------------------------+
+Test case 1
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 2
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 3
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 4
+Your program successfully indicated a failure case
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 5
 Your file matched the expected output
-Now running YOUR tests for step 1
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 6
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 7
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 8
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 9
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 10
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 11
+Your file matched the expected output
+                                                         [2/2]
 
-1.1: Current test is story-step1 story.txt
------------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
-Valgrind was clean
+Step 1 total                                             [25.0/25]
 
+=========================================================================
 Step 2
+
 Checking that story-step2 compiles
 rm -f *~ story-step4  story-step1 story-step2 story-step3 story-step4.o story-step1.o story-step2.o story-step3.o rand_story.o
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step2.c
 gcc -o story-step2 story-step2.o rand_story.o provided.o
 rm story-step2.o
-The code compiled (good)
-Executable story-step2 exists (good)
-Now running YOUR tests for step 2
++-----------------------------------------------------------------------+
+Test case 12
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 13
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 14
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 15
+Your program successfully indicated a failure case
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 16
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 17
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [1.6/2]
++-----------------------------------------------------------------------+
+Test case 18
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 19
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [1.6/2]
++-----------------------------------------------------------------------+
+Test case 20
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 21
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [1.6/2]
++-----------------------------------------------------------------------+
+Test case 22
+Your file matched the expected output
+                                                         [1/1]
 
-2.1: Current test is story-step2 words.txt
------------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
-Valgrind was clean
+Step 2 total                                             [18.8/20]
 
+=========================================================================
 Step 3
+
 Checking that story-step3 compiles
 rm -f *~ story-step4  story-step1 story-step2 story-step3 story-step4.o story-step1.o story-step2.o story-step3.o rand_story.o
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step3.c
 gcc -o story-step3 story-step3.o rand_story.o provided.o
 rm story-step3.o
-The code compiled (good)
-Executable story-step3 exists (good)
-Now running YOUR tests for step 3
++-----------------------------------------------------------------------+
+Test case 23
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 24
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 25
+Your program successfully indicated a failure case
+                                                         [1/1]
++-----------------------------------------------------------------------+
+Test case 26
+Your program successfully indicated a failure case
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 27
+Your program successfully indicated a failure case
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 28
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 29
+Your file matched the expected output
+                                                         [3/3]
++-----------------------------------------------------------------------+
+Test case 30
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [2.4/3]
++-----------------------------------------------------------------------+
+Test case 31
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [1.6/2]
++-----------------------------------------------------------------------+
+Test case 32
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [1.6/2]
++-----------------------------------------------------------------------+
+Test case 33
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [1.6/2]
++-----------------------------------------------------------------------+
+Test case 34
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [1.6/2]
++-----------------------------------------------------------------------+
+Test case 35
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [1.6/2]
 
-3.1: Current test is story-step3 words.txt story2.txt
------------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
-Valgrind was clean
+Step 3 total                                             [22.4/25]
 
+=========================================================================
 Step 4
+
 Checking that story-step4 compiles
 rm -f *~ story-step4  story-step1 story-step2 story-step3 story-step4.o story-step1.o story-step2.o story-step3.o rand_story.o
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step4.c
 gcc -o story-step4 story-step4.o rand_story.o provided.o
 rm story-step4.o
-The code compiled (good)
-Executable story-step4 exists (good)
-Now running YOUR tests for step 4
++-----------------------------------------------------------------------+
+Test case 36
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 37
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 38
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 39
+Your program successfully indicated a failure case
+                                                         [0.5/0.5]
++-----------------------------------------------------------------------+
+Test case 40
+Your program successfully indicated a failure case
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 41
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 42
+Your file matched the expected output
+                                                         [2/2]
++-----------------------------------------------------------------------+
+Test case 43
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 44
+Your file matched the expected output
+                                                         [4/4]
++-----------------------------------------------------------------------+
+Test case 45
+Valgrind reported memory errors
+Your file matched the expected output
+                                                         [3.2/4]
 
-4.1: Current test is story-step4 words.txt story2.txt
------------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
-Valgrind was clean
+Step 4 total                                             [19.2/20]
 
-4.2: Current test is story-step4 -n words.txt story2.txt
------------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
-Valgrind was clean
+=========================================================================
+Code quality
 
-You have passed the test cases YOU provided
-If your tests are good, this is great. 
-If your tests are insufficient, you should do much more testing
+Abstration:    Good
+Naming:        Good
+Formatting:    Excellent
+Documentation: Good
+Comments from your grader:
+Overall well done on your work. You obey most of the code quality we want.Great 
+formatting. You did well in abstraction although some could be better, e.g. 
+your function replace_opt() can be done better considering abstracting some of 
+the subproblems of a task into smaller functions. For naming, consider using 
+some more reasonable name, could be better in some names like "ans","res". Good 
+Documentation!
+Quality total                                            [8.9/10]
 
-Overall Grade: NO GRADE YET
+=========================================================================
+
+Overall Grade: 94
