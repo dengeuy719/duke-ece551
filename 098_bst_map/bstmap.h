@@ -108,7 +108,10 @@ class BstMap : public Map<K, V> {
     }
   }
 
-  ~BstMap<K, V>() { deleteall(root); }
+  ~BstMap<K, V>() {
+    deleteall(root);
+    root = NULL;
+  }
 };
 
 #endif
