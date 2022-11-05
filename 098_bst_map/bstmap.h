@@ -18,6 +18,7 @@ class BstMap : public Map<K, V> {
     Node * left;
     Node * right;
     Node(K key, V value) : key(key), value(value), left(NULL), right(NULL) {}
+    ~Node() {}
   };
   Node * root;
 
@@ -39,7 +40,7 @@ class BstMap : public Map<K, V> {
   static Node *& find(Node *& cur, const K key) {
     return const_cast<Node *&>(find(const_cast<Node * const &>(cur), key));
   }
-  const K minGreaterKey(Node *& cur) {
+  static const K minGreaterKey(Node *& cur) {
     assert(cur != NULL);
     assert(cur->right != NULL);
 
@@ -52,7 +53,7 @@ class BstMap : public Map<K, V> {
     }
     return res;
   }
-  void deleteall(Node *& cur) {
+  static void deleteall(Node *& cur) {
     if (cur != NULL) {
       deleteall(cur->left);
       deleteall(cur->right);
