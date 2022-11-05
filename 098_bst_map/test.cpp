@@ -17,10 +17,14 @@ int main(void) {
   map.add(35, 10);
   map.add(70, 11);
   map.add(86, 12);
+  map.inorder();
   int find1 = map.lookup(60);
   std::cout << "find1 should be 1 and is " << find1 << std::endl;
   int find2 = map.lookup(86);
   std::cout << "find1 should be 12 and is " << find2 << std::endl;
-  map.remove(19);
+  map.remove(60);
+  map.inorder();
+  int find3 = map.lookup(70);
+  std::cout << "find1 should be 1 and is " << find3 << std::endl;
   return EXIT_SUCCESS;
 }

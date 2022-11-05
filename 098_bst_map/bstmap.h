@@ -2,6 +2,7 @@
 #define _BSTMAP_H__
 
 #include <cstdlib>
+#include <iostream>
 #include <stdexcept>
 
 #include "assert.h"
@@ -20,7 +21,7 @@ class BstMap : public Map<K, V> {
   };
   Node * root;
 
-  static Node * const & find(Node * const & cur, const K & key) {
+  static Node * const & find(Node * const & cur, const K key) {
     if (cur == NULL) {
       return cur;
     }
@@ -35,7 +36,7 @@ class BstMap : public Map<K, V> {
       return cur;
     }
   }
-  static Node *& find(Node *& cur, const K & key) {
+  static Node *& find(Node *& cur, const K key) {
     return const_cast<Node *&>(find(const_cast<Node * const &>(cur), key));
   }
   const K minGreaterKey(Node *& cur) {
@@ -56,6 +57,7 @@ class BstMap : public Map<K, V> {
       deleteall(cur->left);
       deleteall(cur->right);
       delete cur;
+      cur = NULL;
     }
   }
 
@@ -108,9 +110,16 @@ class BstMap : public Map<K, V> {
     }
   }
 
-  ~BstMap<K, V>() {
-    deleteall(root);
-    root = NULL;
+  ~BstMap<K, V>() { deleteall(root); }
+
+  void inorder() { inorderRev(root); }
+
+  void inorderRev(Node * root) {
+    if (root != NULL) {
+      inorderRev(root->left);
+      std::cout << root->key << ", ";
+      inorderRev(root->right);
+    }
   }
 };
 
