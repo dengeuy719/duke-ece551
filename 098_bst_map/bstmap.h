@@ -61,10 +61,26 @@ class BstMap : public Map<K, V> {
       cur = NULL;
     }
   }
+  static Node * copy(Node * cur) {
+    if (cur == NULL) {
+      return NULL;
+    }
+    Node * ans = new Node(cur->key, cur->value);
+    ans->left = copy(cur->left);
+    ans->right = copy(cur->right);
+    return ans;
+  }
 
  public:
   BstMap() : root(NULL) {}
-
+  BstMap(const BstMap & rhs) : root(NULL) { root = copy(rhs.root); }
+  BstMap & operator=(const BstMap & rhs) {
+    if (this != &rhs) {
+      deleteall(root);
+      root = copy(rhs.root);
+    }
+    return *this;
+  }
   void add(const K & key, const V & value) {
     Node *& nodeToAdd = find(root, key);
     if (nodeToAdd == NULL) {
