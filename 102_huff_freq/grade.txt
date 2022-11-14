@@ -1,6 +1,6 @@
-Grading at 11/14/2022:01:03:19.580616
-For commit ID 09799bdd7907bec0b1c7d48573e82b76718f36f1
-Grading at Sun Nov 13 08:03:15 PM EST 2022
+Grading at 11/14/2022:01:10:13.834901
+For commit ID a3c0b8297e93d77de821ee272bf60fcea4743833
+Grading at Sun Nov 13 08:10:09 PM EST 2022
 compiling
 g++ -ggdb3 -Wall -Werror -pedantic -o testFreq testFreq.cpp readFreq.cpp
 Make succeed, testFreq created
@@ -18,50 +18,52 @@ Your file matched the expected output
 Testcase passed 
 Testcase 3
 -----------------------
-  - Valgrind reported errors
-Valgrind reported errors (test failed).
-==406918== Memcheck, a memory error detector
-==406918== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==406918== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==406918== Command: ./testFreq /usr/share/dict/words
-==406918== Parent PID: 406917
-==406918== 
-==406918== Invalid read of size 8
-==406918==    at 0x10974A: readFrequencies(char const*) (readFreq.cpp:31)
-==406918==    by 0x109413: main (testFreq.cpp:10)
-==406918==  Address 0x804dd2a98 is not stack'd, malloc'd or (recently) free'd
-==406918== 
-==406918== 
-==406918== Process terminating with default action of signal 11 (SIGSEGV)
-==406918==  Access not within mapped region at address 0x804DD2A98
-==406918==    at 0x10974A: readFrequencies(char const*) (readFreq.cpp:31)
-==406918==    by 0x109413: main (testFreq.cpp:10)
-==406918==  If you believe this happened as a result of a stack
-==406918==  overflow in your program's main thread (unlikely but
-==406918==  possible), you can try to increase the size of the
-==406918==  main thread stack using the --main-stacksize= flag.
-==406918==  The main thread stack size used in this run was 8388608.
-==406918== 
-==406918== HEAP SUMMARY:
-==406918==     in use at exit: 83,424 bytes in 4 blocks
-==406918==   total heap usage: 4 allocs, 0 frees, 83,424 bytes allocated
-==406918== 
-==406918== LEAK SUMMARY:
-==406918==    definitely lost: 0 bytes in 0 blocks
-==406918==    indirectly lost: 0 bytes in 0 blocks
-==406918==      possibly lost: 0 bytes in 0 blocks
-==406918==    still reachable: 83,424 bytes in 4 blocks
-==406918==         suppressed: 0 bytes in 0 blocks
-==406918== Reachable blocks (those to which a pointer was found) are not shown.
-==406918== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==406918== 
-==406918== For lists of detected and suppressed errors, rerun with: -s
-==406918== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
-Testcase 4
------------------------
   - Valgrind was clean (no errors, no memory leaks)
 Checking output:
 Your file matched the expected output
 Testcase passed 
+Testcase 4
+-----------------------
+  - Valgrind reported errors
+Valgrind reported errors (test failed).
+==408117== Memcheck, a memory error detector
+==408117== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==408117== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==408117== Command: ./testFreq /usr/share/dict/cracklib-small
+==408117== Parent PID: 408116
+==408117== 
+==408117== Invalid read of size 1
+==408117==    at 0x4B14A4F: getc (getc.c:37)
+==408117==    by 0x1096B2: readFrequencies(char const*) (readFreq.cpp:29)
+==408117==    by 0x109393: main (testFreq.cpp:10)
+==408117==  Address 0x74 is not stack'd, malloc'd or (recently) free'd
+==408117== 
+==408117== 
+==408117== Process terminating with default action of signal 11 (SIGSEGV)
+==408117==  Access not within mapped region at address 0x74
+==408117==    at 0x4B14A4F: getc (getc.c:37)
+==408117==    by 0x1096B2: readFrequencies(char const*) (readFreq.cpp:29)
+==408117==    by 0x109393: main (testFreq.cpp:10)
+==408117==  If you believe this happened as a result of a stack
+==408117==  overflow in your program's main thread (unlikely but
+==408117==  possible), you can try to increase the size of the
+==408117==  main thread stack using the --main-stacksize= flag.
+==408117==  The main thread stack size used in this run was 8388608.
+==408117== 
+==408117== HEAP SUMMARY:
+==408117==     in use at exit: 74,760 bytes in 2 blocks
+==408117==   total heap usage: 3 allocs, 1 frees, 75,232 bytes allocated
+==408117== 
+==408117== LEAK SUMMARY:
+==408117==    definitely lost: 0 bytes in 0 blocks
+==408117==    indirectly lost: 0 bytes in 0 blocks
+==408117==      possibly lost: 0 bytes in 0 blocks
+==408117==    still reachable: 74,760 bytes in 2 blocks
+==408117==         suppressed: 0 bytes in 0 blocks
+==408117== Reachable blocks (those to which a pointer was found) are not shown.
+==408117== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==408117== 
+==408117== For lists of detected and suppressed errors, rerun with: -s
+==408117== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
 
 Overall Grade: C
