@@ -27,8 +27,7 @@ uint64_t * readFrequencies(const char * fname) {
   FILE * f = fopen(fname, "r");
   int c;
   while ((c = fgetc(f)) != EOF) {
-    unsigned uc = c;
-    ans[uc]++;
+    ans[c]++;
   }
   ans[256] = 1;
   fclose(f);
