@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 #include <cstdlib>
-
+#include <fstream>
 void printSym(std::ostream & s, unsigned sym) {
   if (sym > 256) {
     s << "INV";
@@ -24,12 +24,14 @@ void printSym(std::ostream & s, unsigned sym) {
 uint64_t * readFrequencies(const char * fname) {
   //WRITE ME!
   uint64_t * ans = new uint64_t[257]();
-  FILE * f = fopen(fname, "r");
-  int c;
-  while ((c = fgetc(f)) != EOF) {
-    ans[c]++;
+  std::ifstream is(fname);
+  char c;
+  unsigned char uc;
+  while (is.get(c)) {
+    uc = c;
+    ans[uc]++;
   }
   ans[256] = 1;
-  fclose(f);
+  is.close();
   return ans;
 }
