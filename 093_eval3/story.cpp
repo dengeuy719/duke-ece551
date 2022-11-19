@@ -330,8 +330,13 @@ size_t Story::readInput(size_t numPage, std::vector<size_t> validInput) {
       if (isValid) {
         break;
       }
-      std::cout << "That choice is not available at this time, please try again"
-                << std::endl;
+      if (inputChoiceNum > 0 && inputChoiceNum <= pages[numPage].choices.size()) {
+        std::cout << "That choice is not available at this time, please try again"
+                  << std::endl;
+      }
+      else {
+        std::cout << "That is not a valid choice, please try again" << std::endl;
+      }
     }
     else {
       if (inputChoiceNum > 0 && inputChoiceNum <= pages[numPage].choices.size()) {
