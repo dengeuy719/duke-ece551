@@ -1,6 +1,6 @@
-Grading at 11/19/2022:03:56:13.778155
-For commit ID 0dbb4c5cf4ac6c459a9c2dfd1e449f18c2fe97c8
-Grading at Fri Nov 18 10:55:16 PM EST 2022
+Grading at 11/19/2022:04:12:11.773617
+For commit ID 22203aa6b31424607a99cfbd895bbdc7b8ca9543
+Grading at Fri Nov 18 11:11:14 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -47,7 +47,7 @@ Step 1 EC intermediate deadline test 2
   - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean for this testcase
 You have passed this test case
-Intermediate deadline requirements for Step 1 passed at Fri Nov 18 10:55:21 PM EST 2022
+Intermediate deadline requirements for Step 1 passed at Fri Nov 18 11:11:19 PM EST 2022
 
 Step 2
 Checking that cyoa-step2 compiles
@@ -268,7 +268,7 @@ Step 2 EC intermediate deadline test 23
   - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean for this testcase
 You have passed this test case
-Intermediate deadline requirements for Step 2 passed at Fri Nov 18 10:55:44 PM EST 2022
+Intermediate deadline requirements for Step 2 passed at Fri Nov 18 11:11:42 PM EST 2022
 
 Step 3
 Checking that cyoa-step3 compiles
@@ -323,7 +323,7 @@ Step 3 EC intermediate deadline test 2
   - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean for this testcase
 You have passed this test case
-Intermediate deadline requirements for Step 3 passed at Fri Nov 18 10:55:47 PM EST 2022
+Intermediate deadline requirements for Step 3 passed at Fri Nov 18 11:11:45 PM EST 2022
 
 Step 4
 Checking that cyoa-step4 compiles
@@ -499,104 +499,9 @@ You have passed this test case
 Step 4 EC intermediate deadline test 19
 ===========================================================
 ./cyoa-step4 /usr/local/ece551/cyoa/story3 < /usr/local/ece551/cyoa/story3/inputs/input2.txt
-Your output differs from ours.
-Below is the diff (yours left/ours right)
-As you bask in the morning light pouring through the bakery w	As you bask in the morning light pouring through the bakery w
-your breath is taken away by the stunning display of pastries	your breath is taken away by the stunning display of pastries
-
-"What would you like?" The shop keeper ask cheerily.  Realizi	"What would you like?" The shop keeper ask cheerily.  Realizi
-have a long journey ahead of you, you decide it is best to or	have a long journey ahead of you, you decide it is best to or
-one, but choosing is so hard.					one, but choosing is so hard.
-
-What would you like to do?					What would you like to do?
-
- 1. Purchase a chocolate croissant.				1.Purchase a chocolate croissant.
- 2. Purchase an eclair.						2.Purchase an eclair.
- 3. Purchase a muffin.						3.Purchase a muffin.
-You pay the baker, who puts your croissant into a bag,		You pay the baker, who puts your croissant into a bag,
-and hands it to you.  He wishes you a good day.			and hands it to you.  He wishes you a good day.
-
-
-What would you like to do?					What would you like to do?
-
- 1. Leave the store						1.Leave the store
-As you leave the store, something feels...strange about the m	As you leave the store, something feels...strange about the m
-You aren't quite sure what, but you sense that something unus	You aren't quite sure what, but you sense that something unus
-and strange is about to happen.  The street in front of you r	and strange is about to happen.  The street in front of you r
-east, out of town, or west deeper into town.  			east, out of town, or west deeper into town.  
-
-What would you like to do?					What would you like to do?
-
- 1. Go east, out of town					1.Go east, out of town
- 2. Go west, into town						2.Go west, into town
-As you wander through town, you notice the blacksmith working	As you wander through town, you notice the blacksmith working
-shiny, glowing sword.  He looks up from his work and says	shiny, glowing sword.  He looks up from his work and says
-"You look like the sort of hero who might need a sword?		"You look like the sort of hero who might need a sword?
-Strange things in the air, can't go wrong with a sword.."	Strange things in the air, can't go wrong with a sword.."
-Checking your pockets, you find a few coins left after		Checking your pockets, you find a few coins left after
-your pastry purchase, but you would be broke if your		your pastry purchase, but you would be broke if your
-spent your money on the sword.					spent your money on the sword.
-
-What would you like to do?					What would you like to do?
-
- 1. Buy the sword						1.Buy the sword
- 2. Decline and head out of town				2.Decline and head out of town
-You purchase a gleaming shiny sword, and head out of town.	You purchase a gleaming shiny sword, and head out of town.
-Surely this will keep you safe, no matter what you run into..	Surely this will keep you safe, no matter what you run into..
-
-What would you like to do?					What would you like to do?
-
- 1. Now that you have a sword, head out of town			1.Now that you have a sword, head out of town
-As you head out of town, you notice a shadow pass over you as	As you head out of town, you notice a shadow pass over you as
-something large flies over your head.				something large flies over your head.
-
-What would you like to do?					What would you like to do?
-
- 1. Jump off the road and hide behind a large rock		1.Jump off the road and hide behind a large rock
- 2. Keep walking						2.Keep walking
-Good thing you jumped behind a rock!  A large dragon swooped	Good thing you jumped behind a rock!  A large dragon swooped
-down and landed on the road right where you just were.		down and landed on the road right where you just were.
-The dragon looks hungry and ferocious...			The dragon looks hungry and ferocious...
-
-What would you like to do?					What would you like to do?
-
- 1. <UNAVAILABLE>						1.<UNAVAILABLE>
- 2. Charge the dragon with your sword.				2.Charge the dragon with your sword.
- 3. Offer the dragon the chocolate croissant.			3.Offer the dragon the chocolate croissant.
- 4. <UNAVAILABLE>						4.<UNAVAILABLE>
- 5. <UNAVAILABLE>						5.<UNAVAILABLE>
- 6. Ask the dragon if he has heard any good jokes lately.	6.Ask the dragon if he has heard any good jokes lately.
-That choice is not available at this time, please try again   |	That is not a valid choice, please try again
-That choice is not available at this time, please try again	That choice is not available at this time, please try again
-"Oh my! I'm so hungry, but I do love a good joke.   The		"Oh my! I'm so hungry, but I do love a good joke.   The
-best one I've heard lately is					best one I've heard lately is
-  Why can't you hear a pterodactyl go to the bathroom?"		  Why can't you hear a pterodactyl go to the bathroom?"
-
-The dragon asks waiting a moment for you to reply.		The dragon asks waiting a moment for you to reply.
-"...because the P is silent?"  you guess.			"...because the P is silent?"  you guess.
-
-"HAHAH YES!  I love that one.  Tell you what,			"HAHAH YES!  I love that one.  Tell you what,
-if you tell me a great joke in return, I'll go find		if you tell me a great joke in return, I'll go find
-someone else to eat..."						someone else to eat..."
-
-What would you like to do?					What would you like to do?
-
- 1. What 80s band would sing "You have to fight for your righ	1.What 80s band would sing "You have to fight for your right 
- 2. What do you call it when you see the same ghost twice?	2.What do you call it when you see the same ghost twice?
- 3. Knock knock.						3.Knock knock.
-"Who is there?" asks the dragon.				"Who is there?" asks the dragon.
-
-"Mansplain" you reply						"Mansplain" you reply
-
-"Mansplain who?" The dragon asks.				"Mansplain who?" The dragon asks.
-
-"Well actually, you see mansplaining is about some particular	"Well actually, you see mansplaining is about some particular
-So the right question for you to ask is 'Mansplain what?'..."	So the right question for you to ask is 'Mansplain what?'..."
-
-"Haha, ok you can go." The dragon says as he flies off.		"Haha, ok you can go." The dragon says as he flies off.
-
-Congratulations! You have won. Hooray!				Congratulations! You have won. Hooray!
-Your file did not match the expected ouput
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean for this testcase
+You have passed this test case
 
 Step 4 EC intermediate deadline test 20
 ===========================================================
@@ -646,6 +551,7 @@ Step 4 EC intermediate deadline test 26
   - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean for this testcase
 You have passed this test case
+Intermediate deadline requirements for Step 4 passed at Fri Nov 18 11:12:11 PM EST 2022
 
 You have NOT passed your test cases!
 You should go and figure out/understand where thing went wrong
