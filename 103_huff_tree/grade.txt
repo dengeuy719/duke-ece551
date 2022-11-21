@@ -1,6 +1,6 @@
-Grading at 11/14/2022:01:52:56.114413
-For commit ID 1580429d85af7139f1d0bb0489b1aa98f8766c2b
-Grading at Sun Nov 13 08:52:51 PM EST 2022
+Grading at 11/21/2022:19:08:51.670098
+For commit ID 100f02da107bf7b09b7500db8951cd91dab63502
+Grading at Mon Nov 21 02:08:46 PM EST 2022
 compiling
 g++ -ggdb3 -Wall -Werror -pedantic -o testTree testTree.cpp readFreq.cpp buildTree.cpp
 Make succeed, testTree created
