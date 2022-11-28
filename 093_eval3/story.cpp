@@ -294,7 +294,8 @@ void Story::readStory(const std::string & dir) {
 void Story::verify() {
   try {
     if (!haveRefPages()) {
-      throw std::runtime_error("false: exists page num in choices that is not in story");
+      throw std::runtime_error(
+          "false: exists page num in choices that is not valid in story");
     }
     if (!areRefPages()) {
       throw std::runtime_error("false: exists page num in story that is not referenced");
