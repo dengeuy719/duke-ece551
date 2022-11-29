@@ -5,7 +5,7 @@ D
 C
 B
 D
-D
+B
 D
 D
 B
@@ -14,7 +14,7 @@ D
 C
 C
 D
-D
+A
 B
 D
 C
