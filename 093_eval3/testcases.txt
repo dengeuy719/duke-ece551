@@ -1,4 +1,2 @@
-cyoa-step4 story3 < input2.txt
-cyoa-step4 story3 < input5.txt
-cyoa-step4 story3 < input15.txt
-cyoa-step4 story3 < input22.txt
+cyoa-step4 story3 < story3/input2.txt
+
