@@ -1,6 +1,6 @@
-Grading at 12/03/2022:23:20:46.281084
-For commit ID 9791379b57e3d379149f0f133b398b71162c716e
-Grading at Sat Dec  3 06:20:38 PM EST 2022
+Grading at 12/03/2022:23:22:53.938395
+For commit ID d8fd37ad7d1830771d5701b0a58e50108b18cbc2
+Grading at Sat Dec  3 06:22:46 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -63,41 +63,11 @@ Now running YOUR tests for step 4
 ------------------------------------
 
 
-4.1: Current test is ./cyoa-step4 story3  <  input2.txt
+4.1: Current test is ./cyoa-step4 story3  <  story3/input2.txt
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-/dev/fd/3: line 528: input2.txt: No such file or directory
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-
-
-4.2: Current test is ./cyoa-step4 story3  <  input5.txt
------------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-/dev/fd/3: line 528: input5.txt: No such file or directory
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-
-
-4.3: Current test is ./cyoa-step4 story3  <  input15.txt
------------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-/dev/fd/3: line 528: input15.txt: No such file or directory
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-
-
-4.4: Current test is ./cyoa-step4 story3  <  input22.txt
------------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-/dev/fd/3: line 528: input22.txt: No such file or directory
+/dev/fd/3: line 528: story3/input2.txt: No such file or directory
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind reported errors:
