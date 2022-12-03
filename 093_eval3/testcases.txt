@@ -1,2 +1,2 @@
-cyoa-step4 story3 < story3/input2.txt
+cyoa-step3 story1
 
