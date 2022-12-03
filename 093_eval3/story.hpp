@@ -28,7 +28,6 @@ class Story {
   bool areRefPages();
   bool haveEndingPages();
   size_t readInput(size_t num, std::vector<size_t> validInput);
-
   //step3:
   void findWinPath();
   void computeWinPath(size_t curPath);

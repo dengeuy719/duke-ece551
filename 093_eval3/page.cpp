@@ -25,28 +25,28 @@ std::vector<size_t> Page::printPage(
     std::cout << "What would you like to do?" << std::endl << std::endl;
     if (proMode) {
       for (size_t i = 0; i < choices.size(); i++) {
-        if (choices[i].condition.first.size() == 0) {
+        if (choices[i].getCondition().first.size() == 0) {
           validInput.push_back(i + 1);
-          std::cout << ' ' << i + 1 << ". " << choices[i].sentence << std::endl;
+          std::cout << ' ' << i + 1 << ". " << choices[i].getSentence() << std::endl;
           continue;
         }
         bool condMet = false;
         bool noPair = true;
         for (size_t j = 0; j < gotItem.size(); j++) {
-          if (gotItem[j].first.compare(choices[i].condition.first) == 0) {
+          if (gotItem[j].first.compare(choices[i].getCondition().first) == 0) {
             noPair = false;
-            if (gotItem[j].second == choices[i].condition.second) {
+            if (gotItem[j].second == choices[i].getCondition().second) {
               condMet = true;
               validInput.push_back(i + 1);
             }
           }
         }
-        if (noPair && choices[i].condition.second == 0) {
+        if (noPair && choices[i].getCondition().second == 0) {
           validInput.push_back(i + 1);
-          std::cout << ' ' << i + 1 << ". " << choices[i].sentence << std::endl;
+          std::cout << ' ' << i + 1 << ". " << choices[i].getSentence() << std::endl;
         }
         else if (condMet) {
-          std::cout << ' ' << i + 1 << ". " << choices[i].sentence << std::endl;
+          std::cout << ' ' << i + 1 << ". " << choices[i].getSentence() << std::endl;
         }
         else {
           std::cout << ' ' << i + 1 << ". "
@@ -56,9 +56,20 @@ std::vector<size_t> Page::printPage(
     }
     else {
       for (size_t i = 0; i < choices.size(); i++) {
-        std::cout << ' ' << i + 1 << ". " << choices[i].sentence << std::endl;
+        std::cout << ' ' << i + 1 << ". " << choices[i].getSentence() << std::endl;
       }
     }
   }
   return validInput;
+}
+void Page::setPrecondition(std::pair<std::string, long int> p) {
+  bool find = false;
+  for (size_t i = 0; i < precondition.size(); i++)
+    if (precondition[i].first == p.first) {
+      find = true;
+      precondition[i].second = p.second;
+    }
+  if (!find) {
+    precondition.push_back(p);
+  }
 }

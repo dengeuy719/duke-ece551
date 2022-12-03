@@ -55,8 +55,8 @@ std::string readStoryPath(const std::string & dir) {
 //**
 bool Story::haveRefPages() {
   for (size_t i = 0; i < pages.size(); i++) {
-    for (size_t j = 0; j < pages[i].choices.size(); j++) {
-      if (pages[i].choices[j].num > pages.size() - 1) {
+    for (size_t j = 0; j < pages[i].getChoices().size(); j++) {
+      if (pages[i].getChoices()[j].getNum() > pages.size() - 1) {
         return false;
       }
     }
@@ -70,8 +70,8 @@ bool Story::areRefPages() {
     setPages.insert(i);
   }
   for (size_t i = 0; i < pages.size(); i++) {
-    for (size_t j = 0; j < pages[i].choices.size(); j++) {
-      size_t temp = setPages.erase(pages[i].choices[j].num);
+    for (size_t j = 0; j < pages[i].getChoices().size(); j++) {
+      size_t temp = setPages.erase(pages[i].getChoices()[j].getNum());
     }
   }
   if (!setPages.empty()) {
@@ -86,10 +86,10 @@ bool Story::haveEndingPages() {
   bool hasWin = false;
   bool hasLose = false;
   for (size_t i = 0; i < pages.size(); i++) {
-    if (pages[i].type == "W") {
+    if (pages[i].getType() == "W") {
       hasWin = true;
     }
-    if (pages[i].type == "L") {
+    if (pages[i].getType() == "L") {
       hasLose = true;
     }
     if (hasWin && hasLose) {
@@ -176,7 +176,7 @@ void Story::parseChoice(const std::string & line, std::pair<std::string, long in
     throw std::runtime_error("This page declaration has not appeared yet");
   }
   //check whether this page is N page
-  if (pages[pageNum].type != "N") {
+  if (pages[pageNum].getType() != "N") {
     throw std::runtime_error("Win and Lose pages MUST NOT have any choices");
   }
   //get the choice num : 0:1:I am ready for this story!
@@ -191,7 +191,7 @@ void Story::parseChoice(const std::string & line, std::pair<std::string, long in
   Choice choice(pageChoiceNum, pageChoiceSentence, cond);
   //std::cout <<"choice condition:"<<pageNum << "---"<<choice.num << ":" <<choice.condition.first<< ","<<choice.condition.second<< std::endl;
   //store the page's choice to this page
-  pages[pageNum].choices.push_back(choice);
+  pages[pageNum].setChoices(choice);
 }
 std::pair<std::string, long int> parseCondStr(std::string condStr) {
   // condstr "broke=0"
@@ -235,7 +235,7 @@ void Story::setCondition(const std::string & line) {
   size_t pageNum = convertToValidNum(pageNumStr);
   std::pair<std::string, long int> cond = parseCondStr(condStr);
   //std::cout<<"page condition: " << "pagenum"<< pageNum<<cond.first <<"," <<cond.second<< std::endl;
-  pages[pageNum].precondition.push_back(cond);
+  pages[pageNum].setPrecondition(cond);
 }
 
 //*  read story.txt
@@ -331,7 +331,7 @@ size_t Story::readInput(size_t numPage, std::vector<size_t> validInput) {
       if (isValid) {
         break;
       }
-      if (inputChoiceNum > 0 && inputChoiceNum <= pages[numPage].choices.size()) {
+      if (inputChoiceNum > 0 && inputChoiceNum <= pages[numPage].getChoices().size()) {
         std::cout << "That choice is not available at this time, please try again"
                   << std::endl;
       }
@@ -340,13 +340,13 @@ size_t Story::readInput(size_t numPage, std::vector<size_t> validInput) {
       }
     }
     else {
-      if (inputChoiceNum > 0 && inputChoiceNum <= pages[numPage].choices.size()) {
+      if (inputChoiceNum > 0 && inputChoiceNum <= pages[numPage].getChoices().size()) {
         break;
       }
       std::cout << "That is not a valid choice, please try again" << std::endl;
     }
   }
-  size_t inputChoicePage = pages[numPage].choices[inputChoiceNum - 1].num;
+  size_t inputChoicePage = pages[numPage].getChoices()[inputChoiceNum - 1].getNum();
   return inputChoicePage;
 }
 //*
@@ -368,9 +368,9 @@ void Story::play(bool playPro) {
   std::vector<std::pair<std::string, long int> > gotItem;
   while (1) {
     std::vector<size_t> validInput = pages[numPage].printPage(playPro, gotItem);
-    for (size_t i = 0; i < pages[numPage].precondition.size(); i++)
-      gotItem.push_back(pages[numPage].precondition[i]);
-    if (pages[numPage].type == "L" || pages[numPage].type == "W") {
+    for (size_t i = 0; i < pages[numPage].getPrecondition().size(); i++)
+      gotItem.push_back(pages[numPage].getPrecondition()[i]);
+    if (pages[numPage].getType() == "L" || pages[numPage].getType() == "W") {
       break;
     }
     numPage = readInput(numPage, validInput);
@@ -392,7 +392,7 @@ void Story::findWinPath() {
     std::string ending = "(win)";
     size_t numToEndPage = pathsToWin[i][pathsToWin[i].size() - 1];
     size_t ChoiceToEndPage = choicesToWin[i][choicesToWin[i].size() - 1] - 1;
-    size_t endingPage = pages[numToEndPage].choices[ChoiceToEndPage].num;
+    size_t endingPage = pages[numToEndPage].getChoices()[ChoiceToEndPage].getNum();
     std::cout << endingPage << ending << std::endl;
   }
 }
@@ -404,18 +404,18 @@ void Story::computeWinPath(size_t curPath) {
     }
   }
   visited.push_back(curPath);
-  if (pages[curPath].type == "L") {
+  if (pages[curPath].getType() == "L") {
     return;
   }
-  if (pages[curPath].type == "W") {
+  if (pages[curPath].getType() == "W") {
     pathsToWin.push_back(path);
     choicesToWin.push_back(choice);
     return;
   }
-  for (size_t i = 0; i < pages[curPath].choices.size(); i++) {
+  for (size_t i = 0; i < pages[curPath].getChoices().size(); i++) {
     path.push_back(curPath);
     choice.push_back(i + 1);
-    computeWinPath(pages[curPath].choices[i].num);
+    computeWinPath(pages[curPath].getChoices()[i].getNum());
     path.pop_back();
     choice.pop_back();
   }

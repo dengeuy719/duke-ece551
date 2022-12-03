@@ -6,26 +6,24 @@
 #include <vector>
 
 class Choice {
- public:
+ private:
   size_t num;
   std::string sentence;
   std::pair<std::string, long int> condition;
 
  public:
-  //Choice(size_t num, std::string sentence):num(num),sentence(sentence){createWithoutCond(num, sentence);}
   Choice(size_t num, std::string sentence, std::pair<std::string, long int> cond) :
       num(num), sentence(sentence), condition(cond) {}
-  //void createWithoutCond(size_t n, std::string s);
-  //void createWithCond(size_t n, std::string s, std::pair<std::string, long int> c);
+  size_t getNum() { return num; }
+  std::string getSentence() { return sentence; }
+  std::pair<std::string, long int> getCondition() { return condition; }
 };
 
 class Page {
- public:
-  std::string type;
-  std::vector<Choice> choices;
-  std::vector<std::pair<std::string, long int> > precondition;
-
  private:
+  std::vector<Choice> choices;
+  std::string type;
+  std::vector<std::pair<std::string, long int> > precondition;
   std::vector<std::string> content;
 
  public:
@@ -36,6 +34,12 @@ class Page {
   void parseContent(std::istream & is);
   std::vector<size_t> printPage(bool proMode,
                                 std::vector<std::pair<std::string, long int> > gotItem);
+  std::string getType() { return type; }
+  std::vector<Choice> getChoices() { return choices; }
+  void setChoices(Choice c) { choices.push_back(c); }
+  std::vector<std::pair<std::string, long int> > getPrecondition() {
+    return precondition;
+  }
+  void setPrecondition(std::pair<std::string, long int> p);
 };
-
 #endif

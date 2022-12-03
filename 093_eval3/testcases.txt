@@ -1,4 +1,4 @@
-ec:step1
-ec:step2
-ec:step3
-ec:step4
+cyoa-step4 story3 < input2.txt
+cyoa-step4 story3 < input5.txt
+cyoa-step4 story3 < input15.txt
+cyoa-step4 story3 < input22.txt
