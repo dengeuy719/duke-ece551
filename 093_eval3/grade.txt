@@ -1,6 +1,6 @@
-Grading at 12/03/2022:23:31:01.485597
-For commit ID 23eba703b24f8c8af3350d70df8f0dc9a5d8e35f
-Grading at Sat Dec  3 06:30:52 PM EST 2022
+Grading at 12/03/2022:23:32:20.085169
+For commit ID b77ff2864af73dd228e1522ebc95d7b8d57d695e
+Grading at Sat Dec  3 06:32:11 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -65,8 +65,11 @@ Now running YOUR tests for step 4
 
 4.1: Current test is ./cyoa-step4 story3  <  story3/inputs/input0.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 No request to check for intermediate deadline completion on step 4
 
