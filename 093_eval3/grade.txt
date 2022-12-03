@@ -1,6 +1,6 @@
-Grading at 12/03/2022:23:22:53.938395
-For commit ID d8fd37ad7d1830771d5701b0a58e50108b18cbc2
-Grading at Sat Dec  3 06:22:46 PM EST 2022
+Grading at 12/03/2022:23:27:32.670004
+For commit ID 9d552889516eae9ad9dfb90f80ccab56fb9858da
+Grading at Sat Dec  3 06:27:24 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -46,6 +46,13 @@ Executable cyoa-step3 exists (good)
 ------------------------------------
 Now running YOUR tests for step 3
 ------------------------------------
+
+
+3.1: Current test is ./cyoa-step3 story1 < /dev/null
+-----------------------------
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 No request to check for intermediate deadline completion on step 3
 
 Step 4
@@ -61,20 +68,10 @@ Executable cyoa-step4 exists (good)
 ------------------------------------
 Now running YOUR tests for step 4
 ------------------------------------
-
-
-4.1: Current test is ./cyoa-step4 story3  <  story3/input2.txt
------------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-/dev/fd/3: line 528: story3/input2.txt: No such file or directory
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
 No request to check for intermediate deadline completion on step 4
 
-You have NOT passed your test cases!
-You should go and figure out/understand where thing went wrong
-And fix the problem(s) before the deadline
+You have passed the test cases YOU provided
+If your tests are good, this is great. 
+If your tests are insufficient, you should do much more testing
 
 Overall Grade: NO GRADE YET
