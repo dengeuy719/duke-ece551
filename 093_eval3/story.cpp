@@ -309,7 +309,8 @@ size_t Story::readInput(size_t numPage, std::vector<size_t> validInput) {
   size_t inputChoiceNum;
   while (1) {
     bool isValid = false;
-    std::getline(std::cin, input);
+    std::cin >> input;
+    //std::getline(std::cin, input);
     const char * inputp = input.c_str();
     inputChoiceNum = strtoll(inputp, NULL, 10);
     if (validInput.size() != 0) {
