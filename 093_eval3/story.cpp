@@ -131,17 +131,6 @@ void Story::parsePage(const std::string & line, const std::string & dir) {
   //get the page path : 0@N:page0.txt
   //                        ^^^^^^^^^
   const std::string pageNameStr = line.substr(posColon + 1);
-  //check whether pagePath's number is valid -- (invalid : 0@N:page1.txt)
-  // char const* digits = "0123456789";
-  // std::size_t const firstDigit = pageNameStr.find_first_of(digits);
-  // std::size_t const lastDigit = pageNameStr.find_last_of(digits);
-  // std::string pageNameNumStr = pageNameStr.substr(firstDigit, lastDigit-firstDigit+1);
-
-  // size_t pageNameNum = convertToValidNum(pageNameNumStr);
-  // if(pageNameNum != pageNum){
-  //     throw std::runtime_error("number in pagepath must correspond to the creating page number");
-  // }
-
   //convert pagepath string to pagepath
   const std::string pagePathString = readPagePath(dir, pageNameStr);
   const char * pagePathp = pagePathString.c_str();
@@ -189,7 +178,6 @@ void Story::parseChoice(const std::string & line, std::pair<std::string, long in
   std::string pageChoiceSentence = line.substr(posColon2 + 1);
   //create the choice for the page
   Choice choice(pageChoiceNum, pageChoiceSentence, cond);
-  //std::cout <<"choice condition:"<<pageNum << "---"<<choice.num << ":" <<choice.condition.first<< ","<<choice.condition.second<< std::endl;
   //store the page's choice to this page
   pages[pageNum].setChoices(choice);
 }
@@ -234,7 +222,6 @@ void Story::setCondition(const std::string & line) {
   std::string condStr = line.substr(posDol + 1);
   size_t pageNum = convertToValidNum(pageNumStr);
   std::pair<std::string, long int> cond = parseCondStr(condStr);
-  //std::cout<<"page condition: " << "pagenum"<< pageNum<<cond.first <<"," <<cond.second<< std::endl;
   pages[pageNum].setPrecondition(cond);
 }
 
