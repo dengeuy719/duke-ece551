@@ -3,7 +3,7 @@
 2@L:home.txt
 3@N:stab.txt
 4@N:takeruby.txt
-5@L:pass.txt
+5@W:pass.txt
 
 
 0:1:Try to sneak past the sleeping drago
