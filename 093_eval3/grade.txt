@@ -1,11 +1,11 @@
-Grading at 12/04/2022:03:08:25.251233
-For commit ID 082ce64ed4e28a04e63ef8ffe3d2b488a725dbac
-Grading at Sat Dec  3 10:07:35 PM EST 2022
+Grading at 12/04/2022:03:11:15.384929
+For commit ID b8c3350b5b9790f27a511452fc985dd8f79a53f0
+Grading at Sat Dec  3 10:10:25 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
 Checking that cyoa-step1 compiles
-rm -f *~ cyoa-step4   cyoa-step4.o page.o story.o
+rm -f *~ cyoa-step4  cyoa-step3 cyoa-step2  cyoa-step1 cyoa-step4.o cyoa-step3.o cyoa-step2.o cyoa-step1.o page.o story.o
 g++  -c page.cpp
 g++  -c story.cpp
 g++  -c cyoa-step1.cpp
@@ -34,7 +34,7 @@ No request to check for intermediate deadline completion on step 1
 
 Step 2
 Checking that cyoa-step2 compiles
-rm -f *~ cyoa-step4   cyoa-step4.o page.o story.o
+rm -f *~ cyoa-step4  cyoa-step3 cyoa-step2  cyoa-step1 cyoa-step4.o cyoa-step3.o cyoa-step2.o cyoa-step1.o page.o story.o
 g++  -c page.cpp
 g++  -c story.cpp
 g++  -c cyoa-step2.cpp
@@ -140,7 +140,7 @@ No request to check for intermediate deadline completion on step 2
 
 Step 3
 Checking that cyoa-step3 compiles
-rm -f *~ cyoa-step4   cyoa-step4.o page.o story.o
+rm -f *~ cyoa-step4  cyoa-step3 cyoa-step2  cyoa-step1 cyoa-step4.o cyoa-step3.o cyoa-step2.o cyoa-step1.o page.o story.o
 g++  -c page.cpp
 g++  -c story.cpp
 g++  -c cyoa-step3.cpp
@@ -169,7 +169,7 @@ No request to check for intermediate deadline completion on step 3
 
 Step 4
 Checking that cyoa-step4 compiles
-rm -f *~ cyoa-step4   cyoa-step4.o page.o story.o
+rm -f *~ cyoa-step4  cyoa-step3 cyoa-step2  cyoa-step1 cyoa-step4.o cyoa-step3.o cyoa-step2.o cyoa-step1.o page.o story.o
 g++  -c page.cpp
 g++  -c story.cpp
 g++  -c cyoa-step4.cpp
