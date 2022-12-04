@@ -1,6 +1,6 @@
-Grading at 12/04/2022:18:39:33.940670
-For commit ID 99d8d812b216d6f978ad9412d61d7c01f633c800
-Grading at Sun Dec  4 01:38:42 PM EST 2022
+Grading at 12/04/2022:18:48:54.660026
+For commit ID 47df20e27adb326a3064d8a2137e5856a1137bca
+Grading at Sun Dec  4 01:48:04 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -184,9 +184,9 @@ Now running YOUR tests for step 4
 
 4.1: Current test is ./cyoa-step4 story3  <  story3/inputs/input100.txt
 -----------------------------
-You considered this a failure case:
-timeout: the monitored command dumped core
-But we did not.
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 
 
 4.2: Current test is ./cyoa-step4 story3  <  story3/inputs/input0.txt
@@ -364,8 +364,8 @@ Your output looks good. Lets check valgrind
 Valgrind was clean
 No request to check for intermediate deadline completion on step 4
 
-You have NOT passed your test cases!
-You should go and figure out/understand where thing went wrong
-And fix the problem(s) before the deadline
+You have passed the test cases YOU provided
+If your tests are good, this is great. 
+If your tests are insufficient, you should do much more testing
 
 Overall Grade: NO GRADE YET
