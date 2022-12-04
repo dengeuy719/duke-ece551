@@ -1,6 +1,6 @@
-Grading at 12/04/2022:20:46:50.730750
-For commit ID 40cb6a2851f64d9ace748ba83352f67b993fc330
-Grading at Sun Dec  4 03:46:00 PM EST 2022
+Grading at 12/04/2022:20:49:21.036078
+For commit ID 91219b9ef0f6211fa39e82e7950f8520020f9848
+Grading at Sun Dec  4 03:48:30 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -162,11 +162,8 @@ Valgrind was clean
 
 3.2: Current test is ./cyoa-step3 story2 < /dev/null
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-false: At least 1 Win page and 1 Lose page are needed in story
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 No request to check for intermediate deadline completion on step 3
 
