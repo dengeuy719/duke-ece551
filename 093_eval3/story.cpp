@@ -221,6 +221,9 @@ void Story::setCondition(const std::string & line) {
   std::string pageNumStr = line.substr(0, posDol);
   std::string condStr = line.substr(posDol + 1);
   size_t pageNum = convertToValidNum(pageNumStr);
+  if (pageNum > pages.size() - 1) {
+    error("page num is invalid when setting condition");
+  }
   std::pair<std::string, long int> cond = parseCondStr(condStr);
   pages[pageNum].setPrecondition(cond);
 }
