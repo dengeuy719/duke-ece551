@@ -294,7 +294,8 @@ void Story::verify() {
       throw std::runtime_error("false: exists page num in story that is not referenced");
     };
     if (!haveEndingPages()) {
-      throw std::runtime_error("false: does no exist any ending page in story");
+      throw std::runtime_error(
+          "false: At least 1 Win page and 1 Lose page are needed in story");
     };
   }
   catch (std::runtime_error & e) {
@@ -388,6 +389,9 @@ std::vector<std::vector<size_t> > pathsToWin;
 std::vector<std::vector<size_t> > choicesToWin;
 void Story::findWinPath() {
   computeWinPath(0);
+  if (pathsToWin.empty()) {
+    std::cout << "This story is unwinnable!" << std::endl;
+  }
   for (size_t i = 0; i < pathsToWin.size(); i++) {
     for (size_t j = 0; j < pathsToWin[i].size(); j++) {
       std::cout << pathsToWin[i][j] << "(" << choicesToWin[i][j] << ")"
