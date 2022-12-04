@@ -21,7 +21,7 @@
 6:7:Buy the sword
 6:5:Decline and head out of town
 7@N:sword.txt
-7$    =1
+7$=1
 7$broke=1
 7:5:Now that you have a sword, head out of town
 8@N:dragon.txt
