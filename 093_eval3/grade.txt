@@ -1,6 +1,6 @@
-Grading at 12/04/2022:06:10:39.920317
-For commit ID 2c3f9ba4af2b50df95f01cf7bd08c4e4e7f73e59
-Grading at Sun Dec  4 01:09:31 AM EST 2022
+Grading at 12/04/2022:06:14:33.531090
+For commit ID 07b9c2c16f196cd0ddae41bbd948cb26f72a4bf3
+Grading at Sun Dec  4 01:13:30 AM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -205,18 +205,9 @@ Valgrind was clean
 
 4.4: Current test is ./cyoa-step4 story3  <  story3/inputs/input2.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-timeout: the monitored command dumped core
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-==1970123== Memcheck, a memory error detector
-==1970123== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1970123== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1970123== Command: ./cyoa-step4 story3
-==1970123== Parent PID: 1970122
-==1970123== 
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 
 
 4.5: Current test is ./cyoa-step4 story3  <  story3/inputs/input3.txt
@@ -283,12 +274,12 @@ timeout: the monitored command dumped core
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind reported errors:
-==1970402== Memcheck, a memory error detector
-==1970402== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1970402== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1970402== Command: ./cyoa-step4 story3
-==1970402== Parent PID: 1970401
-==1970402== 
+==1972909== Memcheck, a memory error detector
+==1972909== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1972909== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1972909== Command: ./cyoa-step4 story3
+==1972909== Parent PID: 1972908
+==1972909== 
 
 
 4.14: Current test is ./cyoa-step4 story3  <  story3/inputs/input12.txt
@@ -306,12 +297,12 @@ timeout: the monitored command dumped core
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind reported errors:
-==1970478== Memcheck, a memory error detector
-==1970478== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1970478== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1970478== Command: ./cyoa-step4 story3
-==1970478== Parent PID: 1970477
-==1970478== 
+==1973006== Memcheck, a memory error detector
+==1973006== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1973006== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1973006== Command: ./cyoa-step4 story3
+==1973006== Parent PID: 1973005
+==1973006== 
 
 
 4.16: Current test is ./cyoa-step4 story3  <  story3/inputs/input14.txt
