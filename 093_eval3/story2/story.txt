@@ -1,6 +1,6 @@
 0@N:start.txt
 1@N:tiptoe.txt
-2@W:home.txt
+2@L:home.txt
 3@N:stab.txt
 4@N:takeruby.txt
 5@L:pass.txt
