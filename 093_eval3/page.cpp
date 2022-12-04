@@ -25,33 +25,38 @@ std::vector<size_t> Page::printPage(
     std::cout << "What would you like to do?" << std::endl << std::endl;
     if (proMode) {
       for (size_t i = 0; i < choices.size(); i++) {
-        if (choices[i].getCondition().first.empty() &&
-            choices[i].getCondition().second == 0) {
-          validInput.push_back(i + 1);
-          std::cout << ' ' << i + 1 << ". " << choices[i].getSentence() << std::endl;
-          continue;
-        }
-        bool condMet = false;
-        bool noPair = true;
-        for (size_t j = 0; j < gotItem.size(); j++) {
-          if (gotItem[j].first.compare(choices[i].getCondition().first) == 0) {
-            noPair = false;
-            if (gotItem[j].second == choices[i].getCondition().second) {
-              condMet = true;
-              validInput.push_back(i + 1);
+        if (choices[i].getPro()) {
+          // if(choices[i].getCondition().first.empty()){
+          //     validInput.push_back(i+1);
+          //     std::cout << ' ' << i+1 << ". " << choices[i].getSentence() << std::endl;
+          //     continue;
+          // }
+          bool condMet = false;
+          bool noPair = true;
+          for (size_t j = 0; j < gotItem.size(); j++) {
+            if (gotItem[j].first.compare(choices[i].getCondition().first) == 0) {
+              noPair = false;
+              if (gotItem[j].second == choices[i].getCondition().second) {
+                condMet = true;
+                validInput.push_back(i + 1);
+              }
             }
           }
-        }
-        if (noPair && choices[i].getCondition().second == 0) {
-          validInput.push_back(i + 1);
-          std::cout << ' ' << i + 1 << ". " << choices[i].getSentence() << std::endl;
-        }
-        else if (condMet) {
-          std::cout << ' ' << i + 1 << ". " << choices[i].getSentence() << std::endl;
+          if (noPair && choices[i].getCondition().second == 0) {
+            validInput.push_back(i + 1);
+            std::cout << ' ' << i + 1 << ". " << choices[i].getSentence() << std::endl;
+          }
+          else if (condMet) {
+            std::cout << ' ' << i + 1 << ". " << choices[i].getSentence() << std::endl;
+          }
+          else {
+            std::cout << ' ' << i + 1 << ". "
+                      << "<UNAVAILABLE>" << std::endl;
+          }
         }
         else {
-          std::cout << ' ' << i + 1 << ". "
-                    << "<UNAVAILABLE>" << std::endl;
+          validInput.push_back(i + 1);
+          std::cout << ' ' << i + 1 << ". " << choices[i].getSentence() << std::endl;
         }
       }
     }
@@ -63,6 +68,7 @@ std::vector<size_t> Page::printPage(
   }
   return validInput;
 }
+
 void Page::setPrecondition(std::pair<std::string, long int> p) {
   bool find = false;
   for (size_t i = 0; i < precondition.size(); i++)

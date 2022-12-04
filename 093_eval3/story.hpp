@@ -17,7 +17,9 @@ class Story {
   Story(const std::string & dir) { readStory(dir); };
   void readStory(const std::string & dir);
   void parsePage(const std::string & line, const std::string & dir);
-  void parseChoice(const std::string & line, std::pair<std::string, long int> cond);
+  void parseChoice(const std::string & line,
+                   std::pair<std::string, long int> cond,
+                   bool isPro);
   void parseChoiceWithCond(const std::string & line);
   void setCondition(const std::string & line);
   void display();

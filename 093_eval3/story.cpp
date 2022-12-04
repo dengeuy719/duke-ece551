@@ -145,7 +145,9 @@ void Story::parsePage(const std::string & line, const std::string & dir) {
   pages.push_back(p);
 }
 //* <try>  : []
-void Story::parseChoice(const std::string & line, std::pair<std::string, long int> cond) {
+void Story::parseChoice(const std::string & line,
+                        std::pair<std::string, long int> cond,
+                        bool isPro) {
   if (pages.size() == 0) {
     return;
   }
@@ -178,7 +180,7 @@ void Story::parseChoice(const std::string & line, std::pair<std::string, long in
   //                              ^^^^^^^^^^^^^^^^^^^^^^^^^^
   std::string pageChoiceSentence = line.substr(posColon2 + 1);
   //create the choice for the page
-  Choice choice(pageChoiceNum, pageChoiceSentence, cond);
+  Choice choice(pageChoiceNum, pageChoiceSentence, cond, isPro);
   //store the page's choice to this page
   pages[pageNum].setChoices(choice);
 }
@@ -213,7 +215,7 @@ void Story::parseChoiceWithCond(const std::string & line) {
   std::pair<std::string, long int> cond = parseCondStr(condStr);
   std::string copyLine = line;
   copyLine.replace(posBracketL, posBracketR - posBracketL + 1, "");
-  parseChoice(copyLine, cond);
+  parseChoice(copyLine, cond, true);
 }
 
 void Story::setCondition(const std::string & line) {
@@ -272,7 +274,7 @@ void Story::readStory(const std::string & dir) {
         std::pair<std::string, long int> nullPair;
         nullPair.first = "";
         nullPair.second = 0;
-        parseChoice(line, nullPair);
+        parseChoice(line, nullPair, false);
       }
     }
     catch (const std::runtime_error & e) {

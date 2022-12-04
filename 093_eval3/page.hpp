@@ -10,13 +10,19 @@ class Choice {
   size_t num;
   std::string sentence;
   std::pair<std::string, long int> condition;
+  bool isPro;
 
  public:
-  Choice(size_t num, std::string sentence, std::pair<std::string, long int> cond) :
-      num(num), sentence(sentence), condition(cond) {}
+  Choice(size_t num,
+         std::string sentence,
+         std::pair<std::string, long int> cond,
+         bool isPro) :
+      num(num), sentence(sentence), condition(cond), isPro(isPro) {}
   size_t getNum() { return num; }
   std::string getSentence() { return sentence; }
   std::pair<std::string, long int> getCondition() { return condition; }
+  void setPro() { isPro = true; }
+  bool getPro() { return isPro; }
 };
 
 class Page {
