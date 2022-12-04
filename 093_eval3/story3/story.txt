@@ -36,10 +36,10 @@
 11@L:attack.txt
 12@W:offercroissant.txt
 13@N:squirteclair.txt
-13[broke=0]:16:Fling your last coins at the dragon
-13[sword=1]:17:Attack the dragon with your sword
-13[broke=0]:18:Run for it!
-13[broke=1]:19:Run for it!
+13[   =0]:16:Fling your last coins at the dragon
+13[=1]:17:Attack the dragon with your sword
+13[   =0]:18:Run for it!
+13[   =1]:19:Run for it!
 14@L:throwmuffin.txt
 15@N:jokes.txt
 15:20:What 80s band would sing "You have to fight for your right to lg(N) search?"
