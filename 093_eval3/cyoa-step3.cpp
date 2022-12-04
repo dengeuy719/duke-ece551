@@ -11,6 +11,7 @@ int main(int argc, char ** argv) {
     exit(EXIT_FAILURE);
   }
   Story s(argv[1]);
+  s.verify();
   s.findWinPath();
   return EXIT_SUCCESS;
 }
