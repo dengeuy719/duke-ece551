@@ -162,7 +162,8 @@ void Story::parseChoice(const std::string & line, std::pair<std::string, long in
   size_t pageNum = convertToValidNum(pageNumString);
   //check whether this page has created
   if (pageNum > pages.size() - 1) {
-    throw std::runtime_error("This page declaration has not appeared yet");
+    throw std::runtime_error(
+        "Creating chioce or condition when this page declaration has not appeared yet");
   }
   //check whether this page is N page
   if (pages[pageNum].getType() != "N") {
