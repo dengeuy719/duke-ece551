@@ -1,6 +1,6 @@
-Grading at 12/04/2022:18:48:54.660026
-For commit ID 47df20e27adb326a3064d8a2137e5856a1137bca
-Grading at Sun Dec  4 01:48:04 PM EST 2022
+Grading at 12/04/2022:19:31:04.732702
+For commit ID 9fcc7afee53031d71e5d53fa79db26d8e073147e
+Grading at Sun Dec  4 02:30:15 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -184,183 +184,261 @@ Now running YOUR tests for step 4
 
 4.1: Current test is ./cyoa-step4 story3  <  story3/inputs/input100.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.2: Current test is ./cyoa-step4 story3  <  story3/inputs/input0.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.3: Current test is ./cyoa-step4 story3  <  story3/inputs/input1.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.4: Current test is ./cyoa-step4 story3  <  story3/inputs/input2.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.5: Current test is ./cyoa-step4 story3  <  story3/inputs/input3.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.6: Current test is ./cyoa-step4 story3  <  story3/inputs/input4.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.7: Current test is ./cyoa-step4 story3  <  story3/inputs/input5.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.8: Current test is ./cyoa-step4 story3  <  story3/inputs/input6.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.9: Current test is ./cyoa-step4 story3  <  story3/inputs/input7.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.10: Current test is ./cyoa-step4 story3  <  story3/inputs/input8.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.11: Current test is ./cyoa-step4 story3  <  story3/inputs/input9.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.12: Current test is ./cyoa-step4 story3  <  story3/inputs/input10.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.13: Current test is ./cyoa-step4 story3  <  story3/inputs/input11.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.14: Current test is ./cyoa-step4 story3  <  story3/inputs/input12.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.15: Current test is ./cyoa-step4 story3  <  story3/inputs/input13.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.16: Current test is ./cyoa-step4 story3  <  story3/inputs/input14.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.17: Current test is ./cyoa-step4 story3  <  story3/inputs/input15.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.18: Current test is ./cyoa-step4 story3  <  story3/inputs/input16.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.19: Current test is ./cyoa-step4 story3  <  story3/inputs/input17.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.20: Current test is ./cyoa-step4 story3  <  story3/inputs/input18.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.21: Current test is ./cyoa-step4 story3  <  story3/inputs/input19.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.22: Current test is ./cyoa-step4 story3  <  story3/inputs/input20.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.23: Current test is ./cyoa-step4 story3  <  story3/inputs/input21.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.24: Current test is ./cyoa-step4 story3  <  story3/inputs/input22.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.25: Current test is ./cyoa-step4 story3  <  story3/inputs/input23.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.26: Current test is ./cyoa-step4 story3  <  story3/inputs/input24.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+false: exists page num in story that is not referenced
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 No request to check for intermediate deadline completion on step 4
 
