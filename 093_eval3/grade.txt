@@ -1,6 +1,6 @@
-Grading at 12/04/2022:04:32:23.194559
+Grading at 12/04/2022:04:33:07.205846
 For commit ID 7891ebc4a1be00130279616e0b45e92f6118cc99
-Grading at Sat Dec  3 11:31:39 PM EST 2022
+Grading at Sat Dec  3 11:32:23 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -268,12 +268,12 @@ timeout: the monitored command dumped core
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind reported errors:
-==1925876== Memcheck, a memory error detector
-==1925876== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1925876== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1925876== Command: ./cyoa-step4 story3
-==1925876== Parent PID: 1925874
-==1925876== 
+==1927229== Memcheck, a memory error detector
+==1927229== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1927229== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1927229== Command: ./cyoa-step4 story3
+==1927229== Parent PID: 1927228
+==1927229== 
 
 
 4.5: Current test is ./cyoa-step4 story3  <  story3/inputs/input3.txt
@@ -732,12 +732,12 @@ timeout: the monitored command dumped core
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind reported errors:
-==1926126== Memcheck, a memory error detector
-==1926126== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1926126== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1926126== Command: ./cyoa-step4 story3
-==1926126== Parent PID: 1926125
-==1926126== 
+==1927484== Memcheck, a memory error detector
+==1927484== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1927484== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1927484== Command: ./cyoa-step4 story3
+==1927484== Parent PID: 1927483
+==1927484== 
 
 
 4.14: Current test is ./cyoa-step4 story3  <  story3/inputs/input12.txt
