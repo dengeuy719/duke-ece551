@@ -1,6 +1,6 @@
-Grading at 12/04/2022:18:03:46.416805
-For commit ID 346aa6326c16812f64828d7eb30d2cd118c20e4f
-Grading at Sun Dec  4 01:02:57 PM EST 2022
+Grading at 12/04/2022:18:08:56.757409
+For commit ID ab1dd95268df8b56791f5ed964240ea07e873904
+Grading at Sun Dec  4 01:08:06 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -182,11 +182,14 @@ Now running YOUR tests for step 4
 ------------------------------------
 
 
-4.1: Current test is ./cyoa-step4 story3  <  story3/inputs/input1001.txt
+4.1: Current test is ./cyoa-step4 story4  <  story3/inputs/input100.txt
 -----------------------------
-You considered this a failure case:
-/dev/fd/3: line 528: story3/inputs/input1001.txt: No such file or directory
-But we did not.
+Great: we both considered this an error
+----here is what you printed on stderr---
+story.txt file does not exist
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.2: Current test is ./cyoa-step4 story3  <  story3/inputs/input0.txt
@@ -364,8 +367,8 @@ Your output looks good. Lets check valgrind
 Valgrind was clean
 No request to check for intermediate deadline completion on step 4
 
-You have NOT passed your test cases!
-You should go and figure out/understand where thing went wrong
-And fix the problem(s) before the deadline
+You have passed the test cases YOU provided
+If your tests are good, this is great. 
+If your tests are insufficient, you should do much more testing
 
 Overall Grade: NO GRADE YET
