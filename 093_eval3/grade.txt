@@ -1,6 +1,6 @@
-Grading at 12/04/2022:03:05:05.331668
-For commit ID 4ede5b3a07b2bf69b0e72ed049118072d903593e
-Grading at Sat Dec  3 10:03:36 PM EST 2022
+Grading at 12/04/2022:03:08:25.251233
+For commit ID 082ce64ed4e28a04e63ef8ffe3d2b488a725dbac
+Grading at Sat Dec  3 10:07:35 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -165,69 +165,6 @@ Valgrind was clean
 Your output looks good. Lets check valgrind
   - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
-
-
-3.3: Current test is ./cyoa-step3 story3 < /dev/null
------------------------------
-It looks like you got different output from us on that case.
-Here is the diff (yours on left, ours on right):
-
-0(1),1(1),4(1),5(1),8(1),10(win)				0(1),1(1),4(1),5(1),8(1),10(win)
-0(1),1(1),4(1),5(1),8(6),12(win)				0(1),1(1),4(1),5(1),8(6),12(win)
-0(1),1(1),4(1),5(1),8(7),13(2),17(win)				0(1),1(1),4(1),5(1),8(7),13(2),17(win)
-0(1),1(1),4(1),5(1),8(7),13(4),19(win)				0(1),1(1),4(1),5(1),8(7),13(4),19(win)
-0(1),1(1),4(1),5(1),8(9),15(2),21(win)				0(1),1(1),4(1),5(1),8(9),15(2),21(win)
-0(1),1(1),4(1),5(1),8(9),15(3),22(win)				0(1),1(1),4(1),5(1),8(9),15(3),22(win)
-							      >	0(1),1(1),4(2),6(1),7(1),5(1),8(1),10(win)
-							      >	0(1),1(1),4(2),6(1),7(1),5(1),8(6),12(win)
-							      >	0(1),1(1),4(2),6(1),7(1),5(1),8(7),13(2),17(win)
-							      >	0(1),1(1),4(2),6(1),7(1),5(1),8(7),13(4),19(win)
-							      >	0(1),1(1),4(2),6(1),7(1),5(1),8(9),15(2),21(win)
-							      >	0(1),1(1),4(2),6(1),7(1),5(1),8(9),15(3),22(win)
-							      >	0(1),1(1),4(2),6(2),5(1),8(1),10(win)
-							      >	0(1),1(1),4(2),6(2),5(1),8(6),12(win)
-							      >	0(1),1(1),4(2),6(2),5(1),8(7),13(2),17(win)
-							      >	0(1),1(1),4(2),6(2),5(1),8(7),13(4),19(win)
-							      >	0(1),1(1),4(2),6(2),5(1),8(9),15(2),21(win)
-							      >	0(1),1(1),4(2),6(2),5(1),8(9),15(3),22(win)
-							      >	0(2),2(1),4(1),5(1),8(1),10(win)
-							      >	0(2),2(1),4(1),5(1),8(6),12(win)
-							      >	0(2),2(1),4(1),5(1),8(7),13(2),17(win)
-							      >	0(2),2(1),4(1),5(1),8(7),13(4),19(win)
-							      >	0(2),2(1),4(1),5(1),8(9),15(2),21(win)
-							      >	0(2),2(1),4(1),5(1),8(9),15(3),22(win)
-							      >	0(2),2(1),4(2),6(1),7(1),5(1),8(1),10(win)
-							      >	0(2),2(1),4(2),6(1),7(1),5(1),8(6),12(win)
-							      >	0(2),2(1),4(2),6(1),7(1),5(1),8(7),13(2),17(win)
-							      >	0(2),2(1),4(2),6(1),7(1),5(1),8(7),13(4),19(win)
-							      >	0(2),2(1),4(2),6(1),7(1),5(1),8(9),15(2),21(win)
-							      >	0(2),2(1),4(2),6(1),7(1),5(1),8(9),15(3),22(win)
-							      >	0(2),2(1),4(2),6(2),5(1),8(1),10(win)
-							      >	0(2),2(1),4(2),6(2),5(1),8(6),12(win)
-							      >	0(2),2(1),4(2),6(2),5(1),8(7),13(2),17(win)
-							      >	0(2),2(1),4(2),6(2),5(1),8(7),13(4),19(win)
-							      >	0(2),2(1),4(2),6(2),5(1),8(9),15(2),21(win)
-							      >	0(2),2(1),4(2),6(2),5(1),8(9),15(3),22(win)
-							      >	0(3),3(1),4(1),5(1),8(1),10(win)
-							      >	0(3),3(1),4(1),5(1),8(6),12(win)
-							      >	0(3),3(1),4(1),5(1),8(7),13(2),17(win)
-							      >	0(3),3(1),4(1),5(1),8(7),13(4),19(win)
-							      >	0(3),3(1),4(1),5(1),8(9),15(2),21(win)
-							      >	0(3),3(1),4(1),5(1),8(9),15(3),22(win)
-							      >	0(3),3(1),4(2),6(1),7(1),5(1),8(1),10(win)
-							      >	0(3),3(1),4(2),6(1),7(1),5(1),8(6),12(win)
-							      >	0(3),3(1),4(2),6(1),7(1),5(1),8(7),13(2),17(win)
-							      >	0(3),3(1),4(2),6(1),7(1),5(1),8(7),13(4),19(win)
-							      >	0(3),3(1),4(2),6(1),7(1),5(1),8(9),15(2),21(win)
-							      >	0(3),3(1),4(2),6(1),7(1),5(1),8(9),15(3),22(win)
-							      >	0(3),3(1),4(2),6(2),5(1),8(1),10(win)
-							      >	0(3),3(1),4(2),6(2),5(1),8(6),12(win)
-							      >	0(3),3(1),4(2),6(2),5(1),8(7),13(2),17(win)
-							      >	0(3),3(1),4(2),6(2),5(1),8(7),13(4),19(win)
-							      >	0(3),3(1),4(2),6(2),5(1),8(9),15(2),21(win)
-							      >	0(3),3(1),4(2),6(2),5(1),8(9),15(3),22(win)
-Your file did not match the expected output
-
 No request to check for intermediate deadline completion on step 3
 
 Step 4
@@ -275,18 +212,9 @@ Valgrind was clean
 
 4.5: Current test is ./cyoa-step4 story3  <  story3/inputs/input3.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-timeout: the monitored command dumped core
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-==1875499== Memcheck, a memory error detector
-==1875499== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1875499== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1875499== Command: ./cyoa-step4 story3
-==1875499== Parent PID: 1875498
-==1875499== 
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 
 
 4.6: Current test is ./cyoa-step4 story3  <  story3/inputs/input4.txt
@@ -326,18 +254,9 @@ Valgrind was clean
 
 4.11: Current test is ./cyoa-step4 story3  <  story3/inputs/input9.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-timeout: the monitored command dumped core
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-==1875760== Memcheck, a memory error detector
-==1875760== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1875760== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1875760== Command: ./cyoa-step4 story3
-==1875760== Parent PID: 1875759
-==1875760== 
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 
 
 4.12: Current test is ./cyoa-step4 story3  <  story3/inputs/input10.txt
@@ -356,34 +275,16 @@ Valgrind was clean
 
 4.14: Current test is ./cyoa-step4 story3  <  story3/inputs/input12.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-timeout: the monitored command dumped core
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-==1875867== Memcheck, a memory error detector
-==1875867== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1875867== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1875867== Command: ./cyoa-step4 story3
-==1875867== Parent PID: 1875866
-==1875867== 
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 
 
 4.15: Current test is ./cyoa-step4 story3  <  story3/inputs/input13.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-timeout: the monitored command dumped core
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-==1875946== Memcheck, a memory error detector
-==1875946== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1875946== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1875946== Command: ./cyoa-step4 story3
-==1875946== Parent PID: 1875945
-==1875946== 
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 
 
 4.16: Current test is ./cyoa-step4 story3  <  story3/inputs/input14.txt
@@ -423,18 +324,9 @@ Valgrind was clean
 
 4.21: Current test is ./cyoa-step4 story3  <  story3/inputs/input19.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-timeout: the monitored command dumped core
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-==1876207== Memcheck, a memory error detector
-==1876207== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1876207== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1876207== Command: ./cyoa-step4 story3
-==1876207== Parent PID: 1876206
-==1876207== 
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 
 
 4.22: Current test is ./cyoa-step4 story3  <  story3/inputs/input20.txt
@@ -460,18 +352,9 @@ Valgrind was clean
 
 4.25: Current test is ./cyoa-step4 story3  <  story3/inputs/input23.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-timeout: the monitored command dumped core
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-==1876351== Memcheck, a memory error detector
-==1876351== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1876351== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1876351== Command: ./cyoa-step4 story3
-==1876351== Parent PID: 1876350
-==1876351== 
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 
 
 4.26: Current test is ./cyoa-step4 story3  <  story3/inputs/input24.txt
@@ -481,8 +364,8 @@ Your output looks good. Lets check valgrind
 Valgrind was clean
 No request to check for intermediate deadline completion on step 4
 
-You have NOT passed your test cases!
-You should go and figure out/understand where thing went wrong
-And fix the problem(s) before the deadline
+You have passed the test cases YOU provided
+If your tests are good, this is great. 
+If your tests are insufficient, you should do much more testing
 
 Overall Grade: NO GRADE YET
