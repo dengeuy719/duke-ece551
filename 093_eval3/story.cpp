@@ -368,8 +368,18 @@ void Story::play(bool playPro) {
   std::vector<std::pair<std::string, long int> > gotItem;
   while (1) {
     std::vector<size_t> validInput = pages[numPage].printPage(playPro, gotItem);
-    for (size_t i = 0; i < pages[numPage].getPrecondition().size(); i++)
-      gotItem.push_back(pages[numPage].getPrecondition()[i]);
+    for (size_t i = 0; i < pages[numPage].getPrecondition().size(); i++) {
+      bool findItem = false;
+      for (size_t j = 0; j < gotItem.size(); j++) {
+        if (gotItem[j].first == pages[numPage].getPrecondition()[i].first) {
+          findItem = true;
+          gotItem[j].second = pages[numPage].getPrecondition()[i].second;
+        }
+      }
+      if (!findItem) {
+        gotItem.push_back(pages[numPage].getPrecondition()[i]);
+      }
+    }
     if (pages[numPage].getType() == "L" || pages[numPage].getType() == "W") {
       break;
     }
