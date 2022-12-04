@@ -44,4 +44,3 @@ cyoa-step2 story1 < story1/inputs/input12.txt
 
 cyoa-step3 story1
 cyoa-step3 story2
-cyoa-step3 story3

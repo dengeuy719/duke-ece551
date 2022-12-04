@@ -25,9 +25,6 @@
 7$broke=1
 7:5:Now that you have a sword, head out of town
 8@N:dragon.txt
-8[cf=1]:10:test success.
-8[dnf=0]:10:test success.
-8[dnf=-1]:10:test success.
 8[broke=0]:10:Offer the dragon your last coins.
 8[sword=1]:11:Charge the dragon with your sword.
 8[pastry=1]:12:Offer the dragon the chocolate croissant.
