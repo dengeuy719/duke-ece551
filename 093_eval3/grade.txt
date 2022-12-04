@@ -1,6 +1,6 @@
-Grading at 12/04/2022:17:43:13.081583
-For commit ID b62fc740df1821ccc8ea24f1c73662e22ef2ca57
-Grading at Sun Dec  4 12:42:23 PM EST 2022
+Grading at 12/04/2022:17:49:59.776791
+For commit ID 5d5e39097c4c7cf1e35a5eeb822bd472a230dd5a
+Grading at Sun Dec  4 12:49:13 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -182,190 +182,268 @@ Now running YOUR tests for step 4
 ------------------------------------
 
 
-4.1: Current test is ./cyoa-step4 story3  <  story3/inputs/input101.txt
+4.1: Current test is ./cyoa-step4 story3  <  story3/inputs/input100.txt
 -----------------------------
-You considered this a failure case:
-/dev/fd/3: line 528: story3/inputs/input101.txt: No such file or directory
-But we did not.
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.2: Current test is ./cyoa-step4 story3  <  story3/inputs/input0.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.3: Current test is ./cyoa-step4 story3  <  story3/inputs/input1.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.4: Current test is ./cyoa-step4 story3  <  story3/inputs/input2.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.5: Current test is ./cyoa-step4 story3  <  story3/inputs/input3.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.6: Current test is ./cyoa-step4 story3  <  story3/inputs/input4.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.7: Current test is ./cyoa-step4 story3  <  story3/inputs/input5.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.8: Current test is ./cyoa-step4 story3  <  story3/inputs/input6.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.9: Current test is ./cyoa-step4 story3  <  story3/inputs/input7.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.10: Current test is ./cyoa-step4 story3  <  story3/inputs/input8.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.11: Current test is ./cyoa-step4 story3  <  story3/inputs/input9.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.12: Current test is ./cyoa-step4 story3  <  story3/inputs/input10.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.13: Current test is ./cyoa-step4 story3  <  story3/inputs/input11.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.14: Current test is ./cyoa-step4 story3  <  story3/inputs/input12.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.15: Current test is ./cyoa-step4 story3  <  story3/inputs/input13.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.16: Current test is ./cyoa-step4 story3  <  story3/inputs/input14.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.17: Current test is ./cyoa-step4 story3  <  story3/inputs/input15.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.18: Current test is ./cyoa-step4 story3  <  story3/inputs/input16.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.19: Current test is ./cyoa-step4 story3  <  story3/inputs/input17.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.20: Current test is ./cyoa-step4 story3  <  story3/inputs/input18.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.21: Current test is ./cyoa-step4 story3  <  story3/inputs/input19.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.22: Current test is ./cyoa-step4 story3  <  story3/inputs/input20.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.23: Current test is ./cyoa-step4 story3  <  story3/inputs/input21.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.24: Current test is ./cyoa-step4 story3  <  story3/inputs/input22.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.25: Current test is ./cyoa-step4 story3  <  story3/inputs/input23.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
 4.26: Current test is ./cyoa-step4 story3  <  story3/inputs/input24.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page declarations must appear in order
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 No request to check for intermediate deadline completion on step 4
 
-You have NOT passed your test cases!
-You should go and figure out/understand where thing went wrong
-And fix the problem(s) before the deadline
+You have passed the test cases YOU provided
+If your tests are good, this is great. 
+If your tests are insufficient, you should do much more testing
 
 Overall Grade: NO GRADE YET
