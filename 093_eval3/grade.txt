@@ -1,6 +1,6 @@
-Grading at 12/04/2022:06:14:33.531090
-For commit ID 07b9c2c16f196cd0ddae41bbd948cb26f72a4bf3
-Grading at Sun Dec  4 01:13:30 AM EST 2022
+Grading at 12/04/2022:06:25:29.738605
+For commit ID 7eef8176f320771b689dfc908ef36c5f5f671c85
+Grading at Sun Dec  4 01:24:39 AM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -268,18 +268,9 @@ Valgrind was clean
 
 4.13: Current test is ./cyoa-step4 story3  <  story3/inputs/input11.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-timeout: the monitored command dumped core
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-==1972909== Memcheck, a memory error detector
-==1972909== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1972909== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1972909== Command: ./cyoa-step4 story3
-==1972909== Parent PID: 1972908
-==1972909== 
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 
 
 4.14: Current test is ./cyoa-step4 story3  <  story3/inputs/input12.txt
@@ -291,18 +282,9 @@ Valgrind was clean
 
 4.15: Current test is ./cyoa-step4 story3  <  story3/inputs/input13.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-timeout: the monitored command dumped core
------------------------------------------
-Lets check if it valgrinds:
-Valgrind reported errors:
-==1973006== Memcheck, a memory error detector
-==1973006== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==1973006== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==1973006== Command: ./cyoa-step4 story3
-==1973006== Parent PID: 1973005
-==1973006== 
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
+Valgrind was clean
 
 
 4.16: Current test is ./cyoa-step4 story3  <  story3/inputs/input14.txt
@@ -382,8 +364,8 @@ Your output looks good. Lets check valgrind
 Valgrind was clean
 No request to check for intermediate deadline completion on step 4
 
-You have NOT passed your test cases!
-You should go and figure out/understand where thing went wrong
-And fix the problem(s) before the deadline
+You have passed the test cases YOU provided
+If your tests are good, this is great. 
+If your tests are insufficient, you should do much more testing
 
 Overall Grade: NO GRADE YET
