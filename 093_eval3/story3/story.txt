@@ -22,10 +22,10 @@
 6:5:Decline and head out of town
 7@N:sword.txt
 7$sword=1
-7$broke=1
+7$=1
 7:5:Now that you have a sword, head out of town
 8@N:dragon.txt
-8[broke=0]:11:Offer the dragon your last coins.
+8[broke5:=0]:11:Offer the dragon your last coins broke=0.
 8[sword=1]:11:Charge the dragon with your sword.
 8[pastry=1]:11:Offer the dragon the chocolate croissant.
 8[pastry=2]:11:Squirt the eclair filling in the dragon's eye.
