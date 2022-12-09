@@ -1,6 +1,6 @@
-Grading at 12/09/2022:17:52:48.293525
-For commit ID 637e456ec78dc397e6d1a5572adcdf2b40eabbe0
-Grading at Fri Dec  9 12:51:47 PM EST 2022
+Grading at 12/09/2022:18:01:06.654363
+For commit ID a2e329ff59fbe7c46f1a52e1f9ee06c7c6bfad64
+Grading at Fri Dec  9 12:59:55 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -189,7 +189,7 @@ Now running YOUR tests for step 4
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -199,7 +199,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -209,7 +209,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -219,7 +219,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -229,7 +229,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -239,7 +239,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -249,7 +249,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -259,7 +259,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -269,7 +269,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -279,7 +279,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -289,7 +289,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -299,7 +299,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -309,7 +309,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -319,7 +319,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -329,7 +329,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -339,7 +339,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -349,7 +349,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -359,7 +359,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -369,7 +369,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -379,7 +379,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -389,7 +389,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -399,7 +399,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -409,7 +409,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -419,7 +419,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -429,7 +429,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -439,7 +439,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Wrong format of page type: between first '@' and first ':', we only allow 1 character
+Page file does not exist
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
