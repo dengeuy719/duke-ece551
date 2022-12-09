@@ -312,7 +312,7 @@ size_t Story::readInput(size_t numPage, std::vector<size_t> validInput) {
     bool isValid = false;
     std::cin >> input;
     //check if inputs in inputfile are enough
-    if (input == "\0" && pages[numPage].getType() == "N") {
+    if (std::cin.eof()) {
       error("inputs are not enough to go to the end of the story");
     }
     const char * inputp = input.c_str();
