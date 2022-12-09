@@ -1,6 +1,6 @@
-Grading at 12/09/2022:18:21:56.848788
-For commit ID ad4b0891a3999419b464ef39d04189ba15eb036f
-Grading at Fri Dec  9 01:20:50 PM EST 2022
+Grading at 12/09/2022:19:17:15.934007
+For commit ID ed9b4795d0aac6a1603f0ca23c810de444f23097
+Grading at Fri Dec  9 02:16:14 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -58,7 +58,9 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-inputs are not enough to go to the end of the story
+terminate called after throwing an instance of 'std::invalid_argument'
+  what():  stoul
+timeout: the monitored command dumped core
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -187,69 +189,9 @@ Now running YOUR tests for step 4
 
 4.1: Current test is ./cyoa-step4 story3  <  story3/inputs/input100.txt
 -----------------------------
-It looks like you got different output from us on that case.
-Here is the diff (yours on left, ours on right):
-
-As you bask in the morning light pouring through the bakery w	As you bask in the morning light pouring through the bakery w
-your breath is taken away by the stunning display of pastries	your breath is taken away by the stunning display of pastries
-
-"What would you like?" The shop keeper ask cheerily.  Realizi	"What would you like?" The shop keeper ask cheerily.  Realizi
-have a long journey ahead of you, you decide it is best to or	have a long journey ahead of you, you decide it is best to or
-one, but choosing is so hard.					one, but choosing is so hard.
-
-What would you like to do?					What would you like to do?
-
- 1. Purchase a chocolate croissant.				 1. Purchase a chocolate croissant.
- 2. Purchase an eclair.						 2. Purchase an eclair.
- 3. Purchase a muffin.						 3. Purchase a muffin.
-You pay the baker, who puts your croissant into a bag,		You pay the baker, who puts your croissant into a bag,
-and hands it to you.  He wishes you a good day.			and hands it to you.  He wishes you a good day.
-
-
-What would you like to do?					What would you like to do?
-
- 1. Leave the store						 1. Leave the store
-							      >	That is not a valid choice, please try again
-As you leave the store, something feels...strange about the m	As you leave the store, something feels...strange about the m
-You aren't quite sure what, but you sense that something unus	You aren't quite sure what, but you sense that something unus
-and strange is about to happen.  The street in front of you r	and strange is about to happen.  The street in front of you r
-east, out of town, or west deeper into town.  			east, out of town, or west deeper into town.  
-
-What would you like to do?					What would you like to do?
-
- 1. Go east, out of town					 1. Go east, out of town
- 2. Go west, into town						 2. Go west, into town
-							      >	That is not a valid choice, please try again
-As you head out of town, you notice a shadow pass over you as	As you head out of town, you notice a shadow pass over you as
-something large flies over your head.				something large flies over your head.
-
-What would you like to do?					What would you like to do?
-
- 1. Jump off the road and hide behind a large rock		 1. Jump off the road and hide behind a large rock
- 2. Keep walking						 2. Keep walking
-							      >	That is not a valid choice, please try again
-Good thing you jumped behind a rock!  A large dragon swooped	Good thing you jumped behind a rock!  A large dragon swooped
-down and landed on the road right where you just were.		down and landed on the road right where you just were.
-The dragon looks hungry and ferocious...			The dragon looks hungry and ferocious...
-
-What would you like to do?					What would you like to do?
-
- 1. Offer the dragon your last coins broke=0.			 1. Offer the dragon your last coins broke=0.
- 2. <UNAVAILABLE>						 2. <UNAVAILABLE>
- 3. Offer the dragon the chocolate croissant.			 3. Offer the dragon the chocolate croissant.
- 4. <UNAVAILABLE>						 4. <UNAVAILABLE>
- 5. <UNAVAILABLE>						 5. <UNAVAILABLE>
- 6. Ask the dragon if he has heard any good jokes lately.	 6. Ask the dragon if he has heard any good jokes lately.
-							      >	That is not a valid choice, please try again
-You offer the last of your money to the dragon, who seems a b	You offer the last of your money to the dragon, who seems a b
-"Oh thank you!" he says.  Now, I can just go buy some breafka	"Oh thank you!" he says.  Now, I can just go buy some breafka
-at the bakery rather than eating travelers who wander on the 	at the bakery rather than eating travelers who wander on the 
-
-And everyone lived happily ever after.				And everyone lived happily ever after.
-
-Congratulations! You have won. Hooray!				Congratulations! You have won. Hooray!
-Your file did not match the expected output
-
+You considered this a failure case:
+inputs are not enough to go to the end of the story
+But we did not.
 
 
 4.2: Current test is ./cyoa-step4 story3  <  story3/inputs/input0.txt
