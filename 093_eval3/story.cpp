@@ -130,6 +130,10 @@ void Story::parsePage(const std::string & line, const std::string & dir) {
   //get the page path : 0@N:page0.txt
   //                        ^^^^^^^^^
   const std::string pageNameStr = line.substr(posColon + 1);
+  //check whether pagePath's number is valid -- (invalid : 0@N:)
+  if (pageNameStr.empty()) {
+    error("Page file path is empty");
+  }
   //convert pagepath string to pagepath
   const std::string pagePathString = readPagePath(dir, pageNameStr);
   const char * pagePathp = pagePathString.c_str();
