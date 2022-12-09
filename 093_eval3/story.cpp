@@ -311,7 +311,10 @@ size_t Story::readInput(size_t numPage, std::vector<size_t> validInput) {
   while (1) {
     bool isValid = false;
     std::cin >> input;
-    //std::getline(std::cin, input);
+    //check if inputs in inputfile are enough
+    if (input == "\0" && pages[numPage].getType() == "N") {
+      error("inputs are not enough to go to the end of the story");
+    }
     const char * inputp = input.c_str();
     inputChoiceNum = strtoll(inputp, NULL, 10);
     if (validInput.size() != 0) {
