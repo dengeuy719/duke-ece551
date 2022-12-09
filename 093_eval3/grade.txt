@@ -1,6 +1,6 @@
-Grading at 12/09/2022:02:39:55.645055
-For commit ID 7baceb504eff888ef45d596d645aceae903ce74d
-Grading at Thu Dec  8 09:38:52 PM EST 2022
+Grading at 12/09/2022:02:45:58.438252
+For commit ID a4628ee87c01c59f1c90595c9b339a20e604d716
+Grading at Thu Dec  8 09:45:00 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -56,8 +56,11 @@ Valgrind was clean
 
 2.2: Current test is ./cyoa-step2 story1  <  story1/inputs/input1.txt
 -----------------------------
-Your output looks good. Lets check valgrind
-  - Valgrind was clean (no errors, no memory leaks)
+Great: we both considered this an error
+----here is what you printed on stderr---
+inputs are not enough to go to the end of the story
+-----------------------------------------
+Lets check if it valgrinds:
 Valgrind was clean
 
 
