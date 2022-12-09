@@ -1,6 +1,6 @@
-Grading at 12/09/2022:19:17:15.934007
-For commit ID ed9b4795d0aac6a1603f0ca23c810de444f23097
-Grading at Fri Dec  9 02:16:14 PM EST 2022
+Grading at 12/09/2022:19:42:07.023809
+For commit ID c4d1d5c876cbf98b8d6f496eefdad3a8d5f468a5
+Grading at Fri Dec  9 02:40:41 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -58,9 +58,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-terminate called after throwing an instance of 'std::invalid_argument'
-  what():  stoul
-timeout: the monitored command dumped core
+inputs are not enough to go to the end of the story
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
