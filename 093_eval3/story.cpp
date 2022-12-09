@@ -161,6 +161,9 @@ void Story::parseChoice(const std::string & line,
   //find the second ":" -- 0:1:I am ready for this story!
   //                          ^
   size_t posColon2 = line.find(":", posColon1 + 1);
+  if (posColon2 == std::string::npos) {
+    error("No second ':' in choice line");
+  }
   //get the page num : 0:1:I am ready for this story!
   //                   ^
   std::string pageNumString = line.substr(0, posColon1);
