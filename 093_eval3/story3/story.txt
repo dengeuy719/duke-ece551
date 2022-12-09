@@ -1,4 +1,4 @@
-0@N:   start.txt
+0@N:start.txt  
 0:1:Purchase a chocolate croissant.
 0:2:Purchase an eclair.
 0:3:Purchase a muffin.
