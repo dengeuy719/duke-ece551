@@ -1,6 +1,6 @@
-Grading at 12/09/2022:00:48:56.226421
-For commit ID 737781b0b7b50e6653f52fa6f95b49d3b733f981
-Grading at Thu Dec  8 07:47:51 PM EST 2022
+Grading at 12/09/2022:01:10:44.276320
+For commit ID 72ad7a552a71f301f7ea67f0d607e98d3f6270e5
+Grading at Thu Dec  8 08:09:42 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -186,16 +186,10 @@ Now running YOUR tests for step 4
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-timeout: the monitored command dumped core
+inputs are not enough to go to the end of the story
 -----------------------------------------
 Lets check if it valgrinds:
-Valgrind reported errors:
-==2146404== Memcheck, a memory error detector
-==2146404== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2146404== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==2146404== Command: ./cyoa-step4 story3
-==2146404== Parent PID: 2146403
-==2146404== 
+Valgrind was clean
 
 
 4.2: Current test is ./cyoa-step4 story3  <  story3/inputs/input0.txt
@@ -297,12 +291,12 @@ timeout: the monitored command dumped core
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind reported errors:
-==2147060== Memcheck, a memory error detector
-==2147060== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2147060== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==2147060== Command: ./cyoa-step4 story3
-==2147060== Parent PID: 2147059
-==2147060== 
+==2189729== Memcheck, a memory error detector
+==2189729== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==2189729== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==2189729== Command: ./cyoa-step4 story3
+==2189729== Parent PID: 2189728
+==2189729== 
 
 
 4.16: Current test is ./cyoa-step4 story3  <  story3/inputs/input14.txt
