@@ -321,8 +321,16 @@ size_t Story::readInput(size_t numPage, std::vector<size_t> validInput) {
     if (std::cin.eof()) {
       error("inputs are not enough to go to the end of the story");
     }
-    const char * inputp = input.c_str();
-    inputChoiceNum = strtoll(inputp, NULL, 10);
+    std::size_t pos;
+    inputChoiceNum = std::stoul(input.c_str(), &pos, 10);
+    std::string rest = input.substr(pos);
+    // std::cout << rest << std::endl;
+    if (rest.size() > 0) {
+      std::cout << "That is not a valid choice, please try again" << std::endl;
+      continue;
+    }
+    //const char * inputp = input.c_str();
+    //inputChoiceNum = strtoll(inputp, NULL, 10);
     if (validInput.size() != 0) {
       std::vector<size_t>::iterator it = validInput.begin();
       while (it != validInput.end()) {
