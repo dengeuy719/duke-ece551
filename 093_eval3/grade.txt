@@ -1,6 +1,6 @@
-Grading at 12/09/2022:01:21:27.676794
-For commit ID b66b8441f49bfb464d88177e86b9dcad6ab184d9
-Grading at Thu Dec  8 08:20:26 PM EST 2022
+Grading at 12/09/2022:02:11:20.153719
+For commit ID 2ab10e4a42b4411e7334247179ccf18029e2b8ba
+Grading at Thu Dec  8 09:10:19 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -287,16 +287,10 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-timeout: the monitored command dumped core
+inputs are not enough to go to the end of the story
 -----------------------------------------
 Lets check if it valgrinds:
-Valgrind reported errors:
-==2214254== Memcheck, a memory error detector
-==2214254== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
-==2214254== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
-==2214254== Command: ./cyoa-step4 story3
-==2214254== Parent PID: 2214253
-==2214254== 
+Valgrind was clean
 
 
 4.16: Current test is ./cyoa-step4 story3  <  story3/inputs/input14.txt
@@ -376,8 +370,8 @@ Your output looks good. Lets check valgrind
 Valgrind was clean
 No request to check for intermediate deadline completion on step 4
 
-You have NOT passed your test cases!
-You should go and figure out/understand where thing went wrong
-And fix the problem(s) before the deadline
+You have passed the test cases YOU provided
+If your tests are good, this is great. 
+If your tests are insufficient, you should do much more testing
 
 Overall Grade: NO GRADE YET
