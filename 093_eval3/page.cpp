@@ -26,11 +26,6 @@ std::vector<size_t> Page::printPage(
     if (proMode) {
       for (size_t i = 0; i < choices.size(); i++) {
         if (choices[i].getPro()) {
-          // if(choices[i].getCondition().first.empty()){
-          //     validInput.push_back(i+1);
-          //     std::cout << ' ' << i+1 << ". " << choices[i].getSentence() << std::endl;
-          //     continue;
-          // }
           bool condMet = false;
           bool noPair = true;
           for (size_t j = 0; j < gotItem.size(); j++) {

@@ -21,7 +21,6 @@ size_t convertToValidNum(const std::string numStr) {
     std::size_t pos;
     size_t pageNum = std::stoul(numStr.c_str(), &pos, 10);
     std::string rest = numStr.substr(pos);
-    // std::cout << rest << std::endl;
     if (rest.size() > 0) {
       error("Invalid format of number: exist other characters after number");
     }
