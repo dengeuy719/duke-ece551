@@ -1,6 +1,6 @@
-Grading at 12/09/2022:17:25:26.674573
-For commit ID f376b86cbc1e2802daaf5c7d34e5b1716895724a
-Grading at Fri Dec  9 12:24:45 PM EST 2022
+Grading at 12/09/2022:17:33:38.633290
+For commit ID 6a55bc713a2df5473342a265b613d089049d848b
+Grading at Fri Dec  9 12:32:42 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -189,7 +189,7 @@ Now running YOUR tests for step 4
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-inputs are not enough to go to the end of the story
+Page file path is empty
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -197,156 +197,256 @@ Valgrind was clean
 
 4.2: Current test is ./cyoa-step4 story3  <  story3/inputs/input0.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.3: Current test is ./cyoa-step4 story3  <  story3/inputs/input1.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.4: Current test is ./cyoa-step4 story3  <  story3/inputs/input2.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.5: Current test is ./cyoa-step4 story3  <  story3/inputs/input3.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.6: Current test is ./cyoa-step4 story3  <  story3/inputs/input4.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.7: Current test is ./cyoa-step4 story3  <  story3/inputs/input5.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.8: Current test is ./cyoa-step4 story3  <  story3/inputs/input6.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.9: Current test is ./cyoa-step4 story3  <  story3/inputs/input7.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.10: Current test is ./cyoa-step4 story3  <  story3/inputs/input8.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.11: Current test is ./cyoa-step4 story3  <  story3/inputs/input9.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.12: Current test is ./cyoa-step4 story3  <  story3/inputs/input10.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.13: Current test is ./cyoa-step4 story3  <  story3/inputs/input11.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.14: Current test is ./cyoa-step4 story3  <  story3/inputs/input12.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.15: Current test is ./cyoa-step4 story3  <  story3/inputs/input13.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.16: Current test is ./cyoa-step4 story3  <  story3/inputs/input14.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.17: Current test is ./cyoa-step4 story3  <  story3/inputs/input15.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.18: Current test is ./cyoa-step4 story3  <  story3/inputs/input16.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.19: Current test is ./cyoa-step4 story3  <  story3/inputs/input17.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.20: Current test is ./cyoa-step4 story3  <  story3/inputs/input18.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.21: Current test is ./cyoa-step4 story3  <  story3/inputs/input19.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.22: Current test is ./cyoa-step4 story3  <  story3/inputs/input20.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.23: Current test is ./cyoa-step4 story3  <  story3/inputs/input21.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.24: Current test is ./cyoa-step4 story3  <  story3/inputs/input22.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.25: Current test is ./cyoa-step4 story3  <  story3/inputs/input23.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 
 
 4.26: Current test is ./cyoa-step4 story3  <  story3/inputs/input24.txt
 -----------------------------
-We considered this a failure case.
-But you did not (exit status was EXIT_SUCCESS).
+Great: we both considered this an error
+----here is what you printed on stderr---
+Page file path is empty
+-----------------------------------------
+Lets check if it valgrinds:
+Valgrind was clean
 No request to check for intermediate deadline completion on step 4
 
-You have NOT passed your test cases!
-You should go and figure out/understand where thing went wrong
-And fix the problem(s) before the deadline
+You have passed the test cases YOU provided
+If your tests are good, this is great. 
+If your tests are insufficient, you should do much more testing
 
 Overall Grade: NO GRADE YET
