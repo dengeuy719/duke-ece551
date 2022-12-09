@@ -1,6 +1,6 @@
-Grading at 12/09/2022:18:04:19.578294
-For commit ID 4a7637aa0baca7f32e97f11a21a3fabbc870c208
-Grading at Fri Dec  9 01:03:16 PM EST 2022
+Grading at 12/09/2022:18:16:24.156529
+For commit ID 3c6eb8aad5dcedd00ec6a3ee52aa40587d4b5d8c
+Grading at Fri Dec  9 01:15:12 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -189,7 +189,7 @@ Now running YOUR tests for step 4
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file does not exist
+inputs are not enough to go to the end of the story
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -197,251 +197,176 @@ Valgrind was clean
 
 4.2: Current test is ./cyoa-step4 story3  <  story3/inputs/input0.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.3: Current test is ./cyoa-step4 story3  <  story3/inputs/input1.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.4: Current test is ./cyoa-step4 story3  <  story3/inputs/input2.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.5: Current test is ./cyoa-step4 story3  <  story3/inputs/input3.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.6: Current test is ./cyoa-step4 story3  <  story3/inputs/input4.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.7: Current test is ./cyoa-step4 story3  <  story3/inputs/input5.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.8: Current test is ./cyoa-step4 story3  <  story3/inputs/input6.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.9: Current test is ./cyoa-step4 story3  <  story3/inputs/input7.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.10: Current test is ./cyoa-step4 story3  <  story3/inputs/input8.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.11: Current test is ./cyoa-step4 story3  <  story3/inputs/input9.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.12: Current test is ./cyoa-step4 story3  <  story3/inputs/input10.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.13: Current test is ./cyoa-step4 story3  <  story3/inputs/input11.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.14: Current test is ./cyoa-step4 story3  <  story3/inputs/input12.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.15: Current test is ./cyoa-step4 story3  <  story3/inputs/input13.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.16: Current test is ./cyoa-step4 story3  <  story3/inputs/input14.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.17: Current test is ./cyoa-step4 story3  <  story3/inputs/input15.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.18: Current test is ./cyoa-step4 story3  <  story3/inputs/input16.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.19: Current test is ./cyoa-step4 story3  <  story3/inputs/input17.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.20: Current test is ./cyoa-step4 story3  <  story3/inputs/input18.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.21: Current test is ./cyoa-step4 story3  <  story3/inputs/input19.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.22: Current test is ./cyoa-step4 story3  <  story3/inputs/input20.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.23: Current test is ./cyoa-step4 story3  <  story3/inputs/input21.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.24: Current test is ./cyoa-step4 story3  <  story3/inputs/input22.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.25: Current test is ./cyoa-step4 story3  <  story3/inputs/input23.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 
 
 4.26: Current test is ./cyoa-step4 story3  <  story3/inputs/input24.txt
 -----------------------------
-Great: we both considered this an error
-----here is what you printed on stderr---
-Page file does not exist
------------------------------------------
-Lets check if it valgrinds:
+Your output looks good. Lets check valgrind
+  - Valgrind was clean (no errors, no memory leaks)
 Valgrind was clean
 No request to check for intermediate deadline completion on step 4
 
