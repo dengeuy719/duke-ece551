@@ -1,6 +1,6 @@
-Grading at 12/09/2022:17:33:38.633290
-For commit ID 6a55bc713a2df5473342a265b613d089049d848b
-Grading at Fri Dec  9 12:32:42 PM EST 2022
+Grading at 12/09/2022:17:36:06.346635
+For commit ID 2e7d4b7a536467b16c97f38489164628bf86b257
+Grading at Fri Dec  9 12:35:10 PM EST 2022
 Doing some basic checking for your submission
 
 Step 1
@@ -189,7 +189,7 @@ Now running YOUR tests for step 4
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -199,7 +199,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -209,7 +209,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -219,7 +219,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -229,7 +229,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -239,7 +239,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -249,7 +249,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -259,7 +259,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -269,7 +269,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -279,7 +279,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -289,7 +289,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -299,7 +299,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -309,7 +309,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -319,7 +319,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -329,7 +329,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -339,7 +339,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -349,7 +349,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -359,7 +359,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -369,7 +369,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -379,7 +379,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -389,7 +389,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -399,7 +399,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -409,7 +409,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -419,7 +419,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -429,7 +429,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
@@ -439,7 +439,7 @@ Valgrind was clean
 -----------------------------
 Great: we both considered this an error
 ----here is what you printed on stderr---
-Page file path is empty
+Page declarations must appear in order
 -----------------------------------------
 Lets check if it valgrinds:
 Valgrind was clean
