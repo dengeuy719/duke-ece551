@@ -70,7 +70,7 @@ bool Story::areRefPages() {
   }
   for (size_t i = 0; i < pages.size(); i++) {
     for (size_t j = 0; j < pages[i].getChoices().size(); j++) {
-      size_t temp = setPages.erase(pages[i].getChoices()[j].getNum());
+      setPages.erase(pages[i].getChoices()[j].getNum());
     }
   }
   if (!setPages.empty()) {
