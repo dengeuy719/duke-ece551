@@ -25,11 +25,11 @@
 7$broke5:=1
 7:5:Now that you have a sword, head out of town
 8@N:dragon.txt
-8[broke5:=0]:11:Offer the dragon your last coins broke=0.
+8[broke5:=0]:10:Offer the dragon your last coins broke=0.
 8[sword=1]:11:Charge the dragon with your sword.
-8[pastry=1]:11:Offer the dragon the chocolate croissant.
-8[pastry=2]:11:Squirt the eclair filling in the dragon's eye.
-8[pastry=3]:11:Throw the muffin at the dragon's nose and run for it!
+8[pastry=1]:12:Offer the dragon the chocolate croissant.
+8[pastry=2]:13:Squirt the eclair filling in the dragon's eye.
+8[pastry=3]:14:Throw the muffin at the dragon's nose and run for it!
 8:15:Ask the dragon if he has heard any good jokes lately.
 9@L:dragonsnack.txt
 10@W:coins.txt
